@@ -1,0 +1,24 @@
+{
+  "name": "food-simulator-3d",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Simulador científico de cocina 3D (core headless + Three.js)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "inventory": "node tools/inventory-assets.mjs ../VRChef_modelostexturasaudios assets/metadata/inventory.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0"
+  },
+  "dependencies": {
+    "@tangent.to/lina": "^0.1.4"
+  }
+}

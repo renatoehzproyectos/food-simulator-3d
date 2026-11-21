@@ -1,0 +1,17 @@
+# DECISIONS
+- D1 (Fase 0): ODE = `@tangent.to/ode`; heat/matrices propios; numjs y FEAScript fuera del bundle base.
+- D2: Tests con `vitest` (ya lo usa `ode`). Bundler: Vite.
+- D3: Assets VRChef: **no hay modelo de arroz/grano**, ni vapor, ni burbujas. Respaldo: grano procedural (esferoide en `InstancedMesh`) y partículas procedurales.
+- D4: **Escalas inconsistentes** entre GLB (Pot_1 ≈ 0.26 m; tencere/Pan_* ≈ 6–10 unidades; Oven ≈ 0.3). El `manifest.js` debe llevar un `scaleToMeters` por asset, calibrado a mano contra dimensiones reales de cocina.
+- D5: Candidatos de escena: olla `Pot_1.glb` (escala ya en metros, 0.26 m), cuchara `Spoon.glb`, cucharón `Ladle_1/2.glb`, bol `Bowl.glb`, fuente de calor `hotplate_oven.glb` y `Oven.glb`, mesa `Table_1/2.glb`.
+- D6: Audio: `boiling_water.wav` (ebullición) y `frying_sound.mp3` (chisporroteo/quemado) cubren los eventos `BOIL_START` y `BURN_ONSET`. Faltan sonidos de verter y agitar; se registran como huecos.
+- D7: Los GLB ya vienen convertidos desde FBX; se ignoran los FBX en runtime (no se cargan en web) y se excluyen del build.
+- D8: VRChef es Apache 2.0 → assets redistribuibles con atribución. Para Vercel se incluirá solo un subconjunto (olla, cuchara, cucharón, bol, hotplate, mesa, 2 audios; pocos MB), no los 403 MB. Se excluyen FBX y recursos de terceros (Unity Standard Assets).
+- D9: Entregas futuras: ZIP listo para descomprimir, `git push` y desplegar en Vercel (Vite, `vercel.json`, `npm run build` → `dist`).
+- D13 (Fase 4): un solo solver FV 1D (`physics/fv1d.js`, θ-esquema, planar/cilíndrico/esférico, k variable por media armónica) sirve a calor y a Fick. La olla se modelará como **columna 1D vertical** (fondo→agua/arroz) y el grano como esfera 1D; el 2D (r,z) se difiere porque 1D+1D cubre los 5 escenarios. Revisable.
+- D14: estabilidad explícita por positividad: dt ≤ min Cᵢ Vᵢ / ΣG. Si el usuario pide 'explicit' y se viola, se cambia a 'implicit' y se informa (`switched`). 'auto' usa CN si dt ≤ 4·dt_estable y Euler implícito si no.
+- D15: la ebullición se aplica a posteriori y es conservativa (m_v = m·cp·ΔT/L_v). Hallazgo: con conducción pura (k=0.68) y flujo alto, el agua del fondo se seca antes de que hierva el resto; el modelo de olla necesitará un k efectivo por convección/ebullición (a calibrar y citar en Fase 8).
+- D16: la expansión del grano por humedad (7.2) se difiere a la Fase 7/10, cuando haya un consumidor real.
+- D17 (Fase 6): reacciones = datos (`defineReaction`) integrables con `integrateReactions` (Rosenbrock si rígido); los modelos de primer orden además exportan un paso exacto para el bucle del simulador (más rápido y sin error de integración).
+- D18: la gelatinización intrínseca es rápida >75 °C y la lentitud de la cocción sale de la difusión de agua (S1/S5 emergerán de agua insuficiente / T baja). Implica que D(T) (hoy ASSUMPTION) decide el tiempo de cocción y habrá que calibrarla en Fase 8 contra un tiempo de cocción publicado.
+- D19 (Fase 7): se implementan solo hardness, softness, doneness y stickiness; springiness, brittleness y viscosidad se difieren hasta tener consumidor y fuente (no inventar).

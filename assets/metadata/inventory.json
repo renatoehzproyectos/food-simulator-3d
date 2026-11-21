@@ -1,0 +1,4153 @@
+{
+ "generated": "2026-11-21T14:47:23.068Z",
+ "total": 347,
+ "totalBytes": 421330773,
+ "byFormat": {
+  "fbx": 100,
+  "glb": 100,
+  "txt": 2,
+  "wav": 28,
+  "mp3": 2,
+  "jpg": 58,
+  "png": 57
+ },
+ "duplicates": [
+  [
+   "VRChef_modelos/Textures/KitchenFurniture/Aluminum_Scuffed/Aluminum_Scuffed_Metallic.png",
+   "VRChef_modelos/Textures/water_reflection.png"
+  ],
+  [
+   "VRChef_modelos/Textures/KitchenFurniture/Iron_Scuffed/Iron_Scuffed_Normal.png",
+   "VRChef_modelos/Textures/KitchenFurniture/Titanium_Scuffed/Titanium_Scuffed_Normal.png"
+  ],
+  [
+   "VRChef_modelos/Textures/KitchenFurniture/Streaked_Metal/Streaked_Metal_Diffuse.png",
+   "VRChef_modelos/Textures/KitchenFurniture/Streaked_Metal/Streaked_Metal_Normal.png"
+  ]
+ ],
+ "items": [
+  {
+   "name": "Aspirator_Big.FBX",
+   "path": "VRChef_modelos/FBX/Aspirator_Big.FBX",
+   "format": "fbx",
+   "sizeBytes": 637984,
+   "function": "otro",
+   "category": "otro",
+   "hash": "7cf6f48f517a258c005320ad54d03cb7d74fb78397fa9ae2e9cf0772a42987af"
+  },
+  {
+   "name": "Aspirator_Small.FBX",
+   "path": "VRChef_modelos/FBX/Aspirator_Small.FBX",
+   "format": "fbx",
+   "sizeBytes": 484832,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0dfa2a402b998a6be452f9aafb36e8d0af364492089e2135041c7919e1e98774"
+  },
+  {
+   "name": "Beater.FBX",
+   "path": "VRChef_modelos/FBX/Beater.FBX",
+   "format": "fbx",
+   "sizeBytes": 477072,
+   "function": "otro",
+   "category": "otro",
+   "hash": "5223c1b8a9b12f2c823480a5f17be0c161f8e823e230b52b114744d7b96b4063"
+  },
+  {
+   "name": "Bowl.FBX",
+   "path": "VRChef_modelos/FBX/Bowl.FBX",
+   "format": "fbx",
+   "sizeBytes": 1275088,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0992e417d32b13dc0d883bd3eefc2744eb6d787cc3c394f631389774fccd2b47"
+  },
+  {
+   "name": "Bread_1.fbx",
+   "path": "VRChef_modelos/FBX/Bread_1.fbx",
+   "format": "fbx",
+   "sizeBytes": 33088,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0d072e7d214af35cf45299eb13c2fdedf47d6a26dc4b4ff09595f74d4548b68f"
+  },
+  {
+   "name": "Broccoli.fbx",
+   "path": "VRChef_modelos/FBX/Broccoli.fbx",
+   "format": "fbx",
+   "sizeBytes": 150176,
+   "function": "otro",
+   "category": "otro",
+   "hash": "a02b3a8aa1e3f9a4adce4ff3251474150963e1e436a2e9baaad062cab80be173"
+  },
+  {
+   "name": "Cabbage.fbx",
+   "path": "VRChef_modelos/FBX/Cabbage.fbx",
+   "format": "fbx",
+   "sizeBytes": 5630816,
+   "function": "otro",
+   "category": "otro",
+   "hash": "16e9dc6da96de27b7544a370667bafa79bbc19b5de1e7f6ff19214d821de8750"
+  },
+  {
+   "name": "Carrot.fbx",
+   "path": "VRChef_modelos/FBX/Carrot.fbx",
+   "format": "fbx",
+   "sizeBytes": 187264,
+   "function": "otro",
+   "category": "otro",
+   "hash": "f2c92d9d8f4c13a336a75c398d2a3292818abf297f97b63e772509d531023c8e"
+  },
+  {
+   "name": "ChoppingBoard.fbx",
+   "path": "VRChef_modelos/FBX/ChoppingBoard.fbx",
+   "format": "fbx",
+   "sizeBytes": 129968,
+   "function": "otro",
+   "category": "otro",
+   "hash": "12d88d2dc578a3d01dff469aec3167c75ee3a71506e11657c80f10960ab3e886"
+  },
+  {
+   "name": "Constructor.FBX",
+   "path": "VRChef_modelos/FBX/Constructor.FBX",
+   "format": "fbx",
+   "sizeBytes": 3694928,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b42146bd66ebf9a5b35971c6b08827965f6633ad9c8baad705568f1a1738ef86"
+  },
+  {
+   "name": "Counter.fbx",
+   "path": "VRChef_modelos/FBX/Counter.fbx",
+   "format": "fbx",
+   "sizeBytes": 115488,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d7765825292c48136cac2c4e4b1638b21bb0ff207b34ee29956703907e6f3b61"
+  },
+  {
+   "name": "CubicSphere.fbx",
+   "path": "VRChef_modelos/FBX/CubicSphere.fbx",
+   "format": "fbx",
+   "sizeBytes": 24624,
+   "function": "otro",
+   "category": "otro",
+   "hash": "46dbaaa50656b87d83232ef4ebce9da2b2ab6ec92bf2ef2017c1b13ddccea4ad"
+  },
+  {
+   "name": "Cucumber.fbx",
+   "path": "VRChef_modelos/FBX/Cucumber.fbx",
+   "format": "fbx",
+   "sizeBytes": 73024,
+   "function": "otro",
+   "category": "otro",
+   "hash": "82e6bd945329a35461abb3b711ac07d1883870cf7f94c7bc44beb4a4cf22b675"
+  },
+  {
+   "name": "Filter_1.FBX",
+   "path": "VRChef_modelos/FBX/Filter_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 358304,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b4726c0091b429b686a1e4cbe179d9ca7f0eb9934f66d4eeb732c5da74d4896b"
+  },
+  {
+   "name": "Filter_2.FBX",
+   "path": "VRChef_modelos/FBX/Filter_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 820432,
+   "function": "otro",
+   "category": "otro",
+   "hash": "9a2b004b96f027d443457ef227c4152776708234ce4e773d18b96328d4ac662a"
+  },
+  {
+   "name": "Frying_Pan.FBX",
+   "path": "VRChef_modelos/FBX/Frying_Pan.FBX",
+   "format": "fbx",
+   "sizeBytes": 616048,
+   "function": "otro",
+   "category": "otro",
+   "hash": "f3762be5e1a5a9e27c3c4c863872a7db8d7928b2939a4b256c7d54aba2176a93"
+  },
+  {
+   "name": "GearVrController.fbx",
+   "path": "VRChef_modelos/FBX/GearVrController.fbx",
+   "format": "fbx",
+   "sizeBytes": 638576,
+   "function": "otro",
+   "category": "otro",
+   "hash": "8ec61ab327a8825f73af5bdc6990947c210a642ce9d1367f10b62586f7e5df36"
+  },
+  {
+   "name": "Glass_1.FBX",
+   "path": "VRChef_modelos/FBX/Glass_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 59984,
+   "function": "otro",
+   "category": "otro",
+   "hash": "692de1e62acdf48e2c4f0067b9c147f718d633e4ffd093ad4cd3664c05b50912"
+  },
+  {
+   "name": "Grater.FBX",
+   "path": "VRChef_modelos/FBX/Grater.FBX",
+   "format": "fbx",
+   "sizeBytes": 687520,
+   "function": "otro",
+   "category": "otro",
+   "hash": "4875fa5b1b04a32b014f6826db1596d33e4231be849f05e4f75d86446a28cb44"
+  },
+  {
+   "name": "Heat.fbx",
+   "path": "VRChef_modelos/FBX/Heat.fbx",
+   "format": "fbx",
+   "sizeBytes": 109888,
+   "function": "otro",
+   "category": "otro",
+   "hash": "87e64fc58c3c709bd5db6035f624708407e8c6c20cab2084daf247cb2eca3602"
+  },
+  {
+   "name": "Kitchen.fbx",
+   "path": "VRChef_modelos/FBX/Kitchen.fbx",
+   "format": "fbx",
+   "sizeBytes": 45983440,
+   "function": "otro",
+   "category": "otro",
+   "hash": "e523d69040def49edbe1e8246504d532c803665c503a0ab230c5bce6bc6f031b"
+  },
+  {
+   "name": "Knife_1.FBX",
+   "path": "VRChef_modelos/FBX/Knife_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 472528,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d4befce9cdf2545f223ee43426833997979f09006e042b7659065f1072e1e935"
+  },
+  {
+   "name": "Ladle_1.FBX",
+   "path": "VRChef_modelos/FBX/Ladle_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 544400,
+   "function": "otro",
+   "category": "otro",
+   "hash": "73365e6fe6164268d2851efb143cc3fb3c6079dd16aff80e2d9bb35cd0594d60"
+  },
+  {
+   "name": "Ladle_2.FBX",
+   "path": "VRChef_modelos/FBX/Ladle_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 666256,
+   "function": "otro",
+   "category": "otro",
+   "hash": "70ef73098035b70f0ce017692cde310c576da22e3b1f85a0ba6d0160dec3e4bd"
+  },
+  {
+   "name": "Lemon.fbx",
+   "path": "VRChef_modelos/FBX/Lemon.fbx",
+   "format": "fbx",
+   "sizeBytes": 149264,
+   "function": "otro",
+   "category": "otro",
+   "hash": "79fa308602a044797c042b094462aef75ab919f4a17baf13c6441a306fde31bf"
+  },
+  {
+   "name": "Onion.fbx",
+   "path": "VRChef_modelos/FBX/Onion.fbx",
+   "format": "fbx",
+   "sizeBytes": 434288,
+   "function": "otro",
+   "category": "otro",
+   "hash": "aaf7d5100aaa89733442cf988f2dc812291dbdc1972ef7629308c22130f983b8"
+  },
+  {
+   "name": "Oven.fbx",
+   "path": "VRChef_modelos/FBX/Oven.fbx",
+   "format": "fbx",
+   "sizeBytes": 773984,
+   "function": "otro",
+   "category": "otro",
+   "hash": "eb8eb4276aa39098123a7ddf59bd0bad788849bf89b4c18b5c48c547d9d17998"
+  },
+  {
+   "name": "Pan_1.FBX",
+   "path": "VRChef_modelos/FBX/Pan_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 1005248,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0563db124c9fb9dfd3ff5290a49f3b2765f0db6e5242daa29d858ee20362270f"
+  },
+  {
+   "name": "Pan_2.FBX",
+   "path": "VRChef_modelos/FBX/Pan_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 992896,
+   "function": "otro",
+   "category": "otro",
+   "hash": "2b00ca6faad58e046a907e88227ff7d0c691c18bb6236eedb8473f7a44c5eec5"
+  },
+  {
+   "name": "Pan_Frying_2.FBX",
+   "path": "VRChef_modelos/FBX/Pan_Frying_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 998848,
+   "function": "otro",
+   "category": "otro",
+   "hash": "381c26f4f655ed8410de223f7e35f7fa1bb02694b41fb936ad987f2afab1ac24"
+  },
+  {
+   "name": "Pan_Sauce.FBX",
+   "path": "VRChef_modelos/FBX/Pan_Sauce.FBX",
+   "format": "fbx",
+   "sizeBytes": 947776,
+   "function": "otro",
+   "category": "otro",
+   "hash": "7523566137aeafd802df4435708c9faa43b8cd66d37733df6987ffa8688e8d2d"
+  },
+  {
+   "name": "Pan_Sauce_2.FBX",
+   "path": "VRChef_modelos/FBX/Pan_Sauce_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 996096,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0dad082f64325af5c5f73f0b21b01f06a28ed2b86f32a64e7fcb3fb46c298920"
+  },
+  {
+   "name": "Parsley.fbx",
+   "path": "VRChef_modelos/FBX/Parsley.fbx",
+   "format": "fbx",
+   "sizeBytes": 534112,
+   "function": "otro",
+   "category": "otro",
+   "hash": "12e494391f3359e6183a21d23c11bbaea0e4115af141af059cbd73caf130f8c4"
+  },
+  {
+   "name": "Plate_0.FBX",
+   "path": "VRChef_modelos/FBX/Plate_0.FBX",
+   "format": "fbx",
+   "sizeBytes": 304288,
+   "function": "otro",
+   "category": "otro",
+   "hash": "c83b5ace64edc5da6bf4fe88bf50e94100d48c0de9c1cb073f3694f82e517bd7"
+  },
+  {
+   "name": "Plate_2.FBX",
+   "path": "VRChef_modelos/FBX/Plate_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 652144,
+   "function": "otro",
+   "category": "otro",
+   "hash": "574a0e9a7f3ce454eecb7d083629dff19538862e962d1678637fc83b4879f221"
+  },
+  {
+   "name": "Plate_3.FBX",
+   "path": "VRChef_modelos/FBX/Plate_3.FBX",
+   "format": "fbx",
+   "sizeBytes": 965072,
+   "function": "otro",
+   "category": "otro",
+   "hash": "51b2b38cf1455a75b4072edd0bdacce20ca122306b96d2c9443413e97cb1320d"
+  },
+  {
+   "name": "Pot_1.FBX",
+   "path": "VRChef_modelos/FBX/Pot_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 368832,
+   "function": "otro",
+   "category": "otro",
+   "hash": "89677d313413918e0add33c696e90c7584211b85617a76f6a72cd0b0a6ce2e36"
+  },
+  {
+   "name": "Pot_Sauce.FBX",
+   "path": "VRChef_modelos/FBX/Pot_Sauce.FBX",
+   "format": "fbx",
+   "sizeBytes": 1013568,
+   "function": "otro",
+   "category": "otro",
+   "hash": "5428e764b8080c196b93141309e4d279a2dea7d3d6aa6d6f5ef495c2581ce941"
+  },
+  {
+   "name": "Pot_Sauce_2.FBX",
+   "path": "VRChef_modelos/FBX/Pot_Sauce_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 1013664,
+   "function": "otro",
+   "category": "otro",
+   "hash": "ccd4df73046993df54ddc3b6886919b56657b362a2aea1a6940ff2148f3db75a"
+  },
+  {
+   "name": "Refrigerator.fbx",
+   "path": "VRChef_modelos/FBX/Refrigerator.fbx",
+   "format": "fbx",
+   "sizeBytes": 2339280,
+   "function": "otro",
+   "category": "otro",
+   "hash": "51c692de6f0ea35a9b62fea5850a70e80509d2a0aedee692bc13a29066ed661e"
+  },
+  {
+   "name": "Ribs_1.FBX",
+   "path": "VRChef_modelos/FBX/Ribs_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 35024,
+   "function": "otro",
+   "category": "otro",
+   "hash": "1f31d09a51ebe5e403ce29f831751e650ea4a5cd8bd83e626cf6412d7de8485f"
+  },
+  {
+   "name": "Ribs_2.FBX",
+   "path": "VRChef_modelos/FBX/Ribs_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 25200,
+   "function": "otro",
+   "category": "otro",
+   "hash": "5cfcef0e146f0a4f342ca3a495ce0bfbe3d3b8d0d864b960b7a301b370a24078"
+  },
+  {
+   "name": "Ribs_3.FBX",
+   "path": "VRChef_modelos/FBX/Ribs_3.FBX",
+   "format": "fbx",
+   "sizeBytes": 26368,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b9886c3e9424eb2ce6eb28da328b7bf11377740af392588fdd57acf17b065e23"
+  },
+  {
+   "name": "Ribs_4.FBX",
+   "path": "VRChef_modelos/FBX/Ribs_4.FBX",
+   "format": "fbx",
+   "sizeBytes": 29008,
+   "function": "otro",
+   "category": "otro",
+   "hash": "1abed2e35a5150dcbcc7258e1701edb65b222fea97e8085881e03c2a48257fab"
+  },
+  {
+   "name": "Slicer.FBX",
+   "path": "VRChef_modelos/FBX/Slicer.FBX",
+   "format": "fbx",
+   "sizeBytes": 403104,
+   "function": "otro",
+   "category": "otro",
+   "hash": "9a431f778a1271f0be65ecd60247eddc6e11cb0dd2397453dab26693613ba892"
+  },
+  {
+   "name": "Spatula_1.FBX",
+   "path": "VRChef_modelos/FBX/Spatula_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 554160,
+   "function": "otro",
+   "category": "otro",
+   "hash": "a81645209419e9ec2761aa878135278099a30db4e93855e3f531dd0c2b5e3f31"
+  },
+  {
+   "name": "Spatula_2.FBX",
+   "path": "VRChef_modelos/FBX/Spatula_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 613456,
+   "function": "otro",
+   "category": "otro",
+   "hash": "bdbf9619bc58d1f0d68fb4afcd7f7b5e14bb45b2093a2f80bd2b4eddadccce8f"
+  },
+  {
+   "name": "Spoon.FBX",
+   "path": "VRChef_modelos/FBX/Spoon.FBX",
+   "format": "fbx",
+   "sizeBytes": 428704,
+   "function": "otro",
+   "category": "otro",
+   "hash": "450245a40e91168cc5b5858ed02682011659870e9d5129afd03d01983afe541c"
+  },
+  {
+   "name": "SpringOnion.fbx",
+   "path": "VRChef_modelos/FBX/SpringOnion.fbx",
+   "format": "fbx",
+   "sizeBytes": 1051952,
+   "function": "otro",
+   "category": "otro",
+   "hash": "3bc41aebb16d873351f6438b1ed4803a767983c2a170aacde5c5a14cbdb6193b"
+  },
+  {
+   "name": "Straightener.FBX",
+   "path": "VRChef_modelos/FBX/Straightener.FBX",
+   "format": "fbx",
+   "sizeBytes": 287696,
+   "function": "otro",
+   "category": "otro",
+   "hash": "36aff9e235a838d84841b9782e19fe05cf1f9e7924b8f39be076ac20251244e6"
+  },
+  {
+   "name": "TENCERE__Secil.fbx",
+   "path": "VRChef_modelos/FBX/TENCERE__Secil.fbx",
+   "format": "fbx",
+   "sizeBytes": 923020,
+   "function": "otro",
+   "category": "otro",
+   "hash": "8af614fecd98cdac072cefde933da7a3576287b0433853f1b55b951478e50a5f"
+  },
+  {
+   "name": "Table_1.FBX",
+   "path": "VRChef_modelos/FBX/Table_1.FBX",
+   "format": "fbx",
+   "sizeBytes": 668656,
+   "function": "otro",
+   "category": "otro",
+   "hash": "ea3e8f1bedf8758b81076dc3816a0d71e2d84e4f1e810b607b038f871767ce12"
+  },
+  {
+   "name": "Table_2.FBX",
+   "path": "VRChef_modelos/FBX/Table_2.FBX",
+   "format": "fbx",
+   "sizeBytes": 3260496,
+   "function": "otro",
+   "category": "otro",
+   "hash": "3951f7ca36cf38627350713388759d9166bba5aeb8e5ed25d80946689888f1ab"
+  },
+  {
+   "name": "TestEnvironment.fbx",
+   "path": "VRChef_modelos/FBX/TestEnvironment.fbx",
+   "format": "fbx",
+   "sizeBytes": 24352,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0d7ece6120af968501cf1cd2eb0baa3d15b2610b5f73967164ee404d76b4e8fa"
+  },
+  {
+   "name": "Tomato.FBX",
+   "path": "VRChef_modelos/FBX/Tomato.FBX",
+   "format": "fbx",
+   "sizeBytes": 2096624,
+   "function": "otro",
+   "category": "otro",
+   "hash": "51a9cd55d26ad6c9ed408cdc08b76c24e4eac8916c34dbd83ee9a0ac00f33b10"
+  },
+  {
+   "name": "VRTK_BasicHand.fbx",
+   "path": "VRChef_modelos/FBX/VRTK_BasicHand.fbx",
+   "format": "fbx",
+   "sizeBytes": 405580,
+   "function": "otro",
+   "category": "otro",
+   "hash": "9a56a86557b37ef587f3192d8ff5fc9c88e0249977696d35f1c07dbebb40fb43"
+  },
+  {
+   "name": "Ventilation.FBX",
+   "path": "VRChef_modelos/FBX/Ventilation.FBX",
+   "format": "fbx",
+   "sizeBytes": 698592,
+   "function": "otro",
+   "category": "otro",
+   "hash": "bdf023a50bb66e3238d02da9a2b641a65b32fa78b54a128a9635376884a9842b"
+  },
+  {
+   "name": "WaterBasicPlane.fbx",
+   "path": "VRChef_modelos/FBX/WaterBasicPlane.fbx",
+   "format": "fbx",
+   "sizeBytes": 19648,
+   "function": "otro",
+   "category": "otro",
+   "hash": "7a4318f488ed251db92cd5467c601771aa1116d869bc28c08bb5bec67b198656"
+  },
+  {
+   "name": "WonderRocks.fbx",
+   "path": "VRChef_modelos/FBX/WonderRocks.fbx",
+   "format": "fbx",
+   "sizeBytes": 903440,
+   "function": "otro",
+   "category": "otro",
+   "hash": "f14d955f2690332330cf3f21b45c3a8802590c4f3593af0c3d818d626f1d4eec"
+  },
+  {
+   "name": "banana_with_flesh.fbx",
+   "path": "VRChef_modelos/FBX/banana_with_flesh.fbx",
+   "format": "fbx",
+   "sizeBytes": 2338380,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0cbf4840b6bfcf1a106173049d08d141d9d9091cf44dad5388ba0dd8e181b4da"
+  },
+  {
+   "name": "bottle.fbx",
+   "path": "VRChef_modelos/FBX/bottle.fbx",
+   "format": "fbx",
+   "sizeBytes": 89628,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d49185ed1d9fdf2cb4c71459f7cf0cb0e27fe1647a0dec8b6a3abe3d7c02b10b"
+  },
+  {
+   "name": "bowl3.fbx",
+   "path": "VRChef_modelos/FBX/bowl3.fbx",
+   "format": "fbx",
+   "sizeBytes": 196764,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0a19602cbed72e51492b37de610ff9ae879d387840b4df054b987a7fe3576d41"
+  },
+  {
+   "name": "bowll.FBX",
+   "path": "VRChef_modelos/FBX/bowll.FBX",
+   "format": "fbx",
+   "sizeBytes": 91200,
+   "function": "otro",
+   "category": "otro",
+   "hash": "ef7195e4599087754a240b557177f49dea8f1b9f78bdbf4ff7c812906084f30e"
+  },
+  {
+   "name": "broken_glass.fbx",
+   "path": "VRChef_modelos/FBX/broken_glass.fbx",
+   "format": "fbx",
+   "sizeBytes": 124220,
+   "function": "otro",
+   "category": "otro",
+   "hash": "73f8c4d3e6357b291b4b3012d23aabfa55c06491e4802597afde6287ddffe22f"
+  },
+  {
+   "name": "broken_plate.fbx",
+   "path": "VRChef_modelos/FBX/broken_plate.fbx",
+   "format": "fbx",
+   "sizeBytes": 92460,
+   "function": "otro",
+   "category": "otro",
+   "hash": "3a8035cee49c7a9d72a61c148767595fe82307a41fea26da87bf1125b4c5ead1"
+  },
+  {
+   "name": "bucket.fbx",
+   "path": "VRChef_modelos/FBX/bucket.fbx",
+   "format": "fbx",
+   "sizeBytes": 146736,
+   "function": "otro",
+   "category": "otro",
+   "hash": "a52bc8aa1cd6e3c523018741f589f7e2c02f88302a5b9e3956cd0fe0477d133f"
+  },
+  {
+   "name": "chicken_fillet.fbx",
+   "path": "VRChef_modelos/FBX/chicken_fillet.fbx",
+   "format": "fbx",
+   "sizeBytes": 20204,
+   "function": "otro",
+   "category": "otro",
+   "hash": "f0fd37a90839573341a3adaa454810f4310a48fe87f369b537cdd24ec2f3108c"
+  },
+  {
+   "name": "cucumber_rig.fbx",
+   "path": "VRChef_modelos/FBX/cucumber_rig.fbx",
+   "format": "fbx",
+   "sizeBytes": 133484,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b98a39d0d23ad81ab21791c535f4aead1955276a6bb7d2f3f6ff893ca6c9a698"
+  },
+  {
+   "name": "cucurbita.fbx",
+   "path": "VRChef_modelos/FBX/cucurbita.fbx",
+   "format": "fbx",
+   "sizeBytes": 81068,
+   "function": "otro",
+   "category": "otro",
+   "hash": "026d48cffac03a107fed8ac9831650cb9310cbb98944de0680cc0902f4ff0303"
+  },
+  {
+   "name": "egg.fbx",
+   "path": "VRChef_modelos/FBX/egg.fbx",
+   "format": "fbx",
+   "sizeBytes": 62348,
+   "function": "otro",
+   "category": "otro",
+   "hash": "539fc01f3bbd6bbd77b1f113e51af152067dd3a956451731e077a132e25f9045"
+  },
+  {
+   "name": "egg_inside.fbx",
+   "path": "VRChef_modelos/FBX/egg_inside.fbx",
+   "format": "fbx",
+   "sizeBytes": 23916,
+   "function": "otro",
+   "category": "otro",
+   "hash": "43f35abbffab4077cb78073af9ec21e2bd03231388fe3b062a9d1f82fa30c88a"
+  },
+  {
+   "name": "eggplant.fbx",
+   "path": "VRChef_modelos/FBX/eggplant.fbx",
+   "format": "fbx",
+   "sizeBytes": 84060,
+   "function": "otro",
+   "category": "otro",
+   "hash": "dff0ba9fa68d9156832cd6dccf6ba810af2faa884d1367624d32dd3c7f1d4a47"
+  },
+  {
+   "name": "faucet.fbx",
+   "path": "VRChef_modelos/FBX/faucet.fbx",
+   "format": "fbx",
+   "sizeBytes": 40368,
+   "function": "otro",
+   "category": "otro",
+   "hash": "deec63a958ac659830cd0fa29de2aa877d2fbcd70ecc310e8e8eeda9ff5a5f6f"
+  },
+  {
+   "name": "flour1.fbx",
+   "path": "VRChef_modelos/FBX/flour1.fbx",
+   "format": "fbx",
+   "sizeBytes": 151116,
+   "function": "otro",
+   "category": "otro",
+   "hash": "2e5b2a61844740b4d866b4d0e24cc9ab17f4a8e181fa597e17acd91a582c4e8d"
+  },
+  {
+   "name": "frying_pan_1.fbx",
+   "path": "VRChef_modelos/FBX/frying_pan_1.fbx",
+   "format": "fbx",
+   "sizeBytes": 589436,
+   "function": "otro",
+   "category": "otro",
+   "hash": "1626b97898f56f9b7138230b795de98713c59579c7e5cf3a4349d41d084c6015"
+  },
+  {
+   "name": "full_cracked_egg.fbx",
+   "path": "VRChef_modelos/FBX/full_cracked_egg.fbx",
+   "format": "fbx",
+   "sizeBytes": 114364,
+   "function": "otro",
+   "category": "otro",
+   "hash": "86d0696e3b29a112a3df5cdc1893c6d1c9fdbccc941695946e42dc83466766d1"
+  },
+  {
+   "name": "glass.fbx",
+   "path": "VRChef_modelos/FBX/glass.fbx",
+   "format": "fbx",
+   "sizeBytes": 21516,
+   "function": "otro",
+   "category": "otro",
+   "hash": "7e7b13ae0eaa30c445957459d0ab8e117aea01473ee8dd12c526d614bb1dd863"
+  },
+  {
+   "name": "half_cracked_egg.fbx",
+   "path": "VRChef_modelos/FBX/half_cracked_egg.fbx",
+   "format": "fbx",
+   "sizeBytes": 86108,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d112b384d5864d8422efc6596162017ebab25aa39cb8e66801dfe63c87301e53"
+  },
+  {
+   "name": "hotplate_oven.fbx",
+   "path": "VRChef_modelos/FBX/hotplate_oven.fbx",
+   "format": "fbx",
+   "sizeBytes": 62460,
+   "function": "otro",
+   "category": "otro",
+   "hash": "2955a36762f5033c2890ea6614569f2d7e02cf23ef573d9ea53710cef475cce2"
+  },
+  {
+   "name": "jar.fbx",
+   "path": "VRChef_modelos/FBX/jar.fbx",
+   "format": "fbx",
+   "sizeBytes": 290300,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b4beb54dd53a0b4283da83918450d100918ded77c193051afc4bb0f4e9e08e46"
+  },
+  {
+   "name": "jarwithflour5.fbx",
+   "path": "VRChef_modelos/FBX/jarwithflour5.fbx",
+   "format": "fbx",
+   "sizeBytes": 372620,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d84944c12bf01a97fbe3ff2129bca1a11590337066f601dcddf60ded563d6cda"
+  },
+  {
+   "name": "mashedPotato2.fbx",
+   "path": "VRChef_modelos/FBX/mashedPotato2.fbx",
+   "format": "fbx",
+   "sizeBytes": 58444,
+   "function": "otro",
+   "category": "otro",
+   "hash": "746282450c91f8aa5e7544da78d3b027858ccc5ce98bad1f7c49cdee0f7a1966"
+  },
+  {
+   "name": "mixed.fbx",
+   "path": "VRChef_modelos/FBX/mixed.fbx",
+   "format": "fbx",
+   "sizeBytes": 20492,
+   "function": "otro",
+   "category": "otro",
+   "hash": "fd18dcf07574dbb4757f8a2f418b7ee3d92d6a17102510447bca64dff6dcca79"
+  },
+  {
+   "name": "mushroom.fbx",
+   "path": "VRChef_modelos/FBX/mushroom.fbx",
+   "format": "fbx",
+   "sizeBytes": 9145052,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0c6a2f94e524147d58da6bb3fa454c933901a88088c83f56fd791d426d8027bb"
+  },
+  {
+   "name": "onion_rig.fbx",
+   "path": "VRChef_modelos/FBX/onion_rig.fbx",
+   "format": "fbx",
+   "sizeBytes": 519964,
+   "function": "otro",
+   "category": "otro",
+   "hash": "950785c9dc4334b5f9cfc1ebe3def0336f4cd549b65ef3743d5f61b08c82a530"
+  },
+  {
+   "name": "pepper.fbx",
+   "path": "VRChef_modelos/FBX/pepper.fbx",
+   "format": "fbx",
+   "sizeBytes": 450540,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b41f880ff2910a4592d641749c718f4828ef2fad3c5c8d174cb23b75770e4d51"
+  },
+  {
+   "name": "plate.fbx",
+   "path": "VRChef_modelos/FBX/plate.fbx",
+   "format": "fbx",
+   "sizeBytes": 33404,
+   "function": "otro",
+   "category": "otro",
+   "hash": "c649335e0f46adb9b63b39fb7a3698f69e5725c22b82749948554bf9c4e63d49"
+  },
+  {
+   "name": "potato.fbx",
+   "path": "VRChef_modelos/FBX/potato.fbx",
+   "format": "fbx",
+   "sizeBytes": 34876,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d4372dfd99ebb260094ef89706ee1a10902516b3547237470c8751dbece09d2a"
+  },
+  {
+   "name": "potato__Potato.fbx",
+   "path": "VRChef_modelos/FBX/potato__Potato.fbx",
+   "format": "fbx",
+   "sizeBytes": 51712,
+   "function": "otro",
+   "category": "otro",
+   "hash": "8dc20d6462684bf63f6b4ed14ed73f69c14b280a1d31fdb9b489af5fb944eeb8"
+  },
+  {
+   "name": "potato_rig.fbx",
+   "path": "VRChef_modelos/FBX/potato_rig.fbx",
+   "format": "fbx",
+   "sizeBytes": 148012,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0cde0a2e7f9959937ab489cb97192db364b2ef7cc1771fbbf29da9566b3eb4e8"
+  },
+  {
+   "name": "potato_with_flesh.fbx",
+   "path": "VRChef_modelos/FBX/potato_with_flesh.fbx",
+   "format": "fbx",
+   "sizeBytes": 103116,
+   "function": "otro",
+   "category": "otro",
+   "hash": "3aa5eee0897aab000a398f1701f1a8b0109b6914dbe5579630b62cdafc358412"
+  },
+  {
+   "name": "sausage.fbx",
+   "path": "VRChef_modelos/FBX/sausage.fbx",
+   "format": "fbx",
+   "sizeBytes": 51824,
+   "function": "otro",
+   "category": "otro",
+   "hash": "819e5d41024fd859e0b720f1e8c9549965afc30db28c4e8b255ba6ccb86b8acc"
+  },
+  {
+   "name": "silicone_spatula.fbx",
+   "path": "VRChef_modelos/FBX/silicone_spatula.fbx",
+   "format": "fbx",
+   "sizeBytes": 321484,
+   "function": "otro",
+   "category": "otro",
+   "hash": "40f60d2c608355673debca7766bf05e86135366da68fb9c313da3a377417cb3b"
+  },
+  {
+   "name": "slicedPotato.fbx",
+   "path": "VRChef_modelos/FBX/slicedPotato.fbx",
+   "format": "fbx",
+   "sizeBytes": 29836,
+   "function": "otro",
+   "category": "otro",
+   "hash": "bb6920d461400629445cd54a51803c1e3ffadf7dfd1df1717393602bcfe558ab"
+  },
+  {
+   "name": "smashedTomato.fbx",
+   "path": "VRChef_modelos/FBX/smashedTomato.fbx",
+   "format": "fbx",
+   "sizeBytes": 224972,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0805ea79af1b1cff61b8224bb21bc4cebfa8ed22e5a62fac125a5c3dd201d70b"
+  },
+  {
+   "name": "spoonwithfloor3.fbx",
+   "path": "VRChef_modelos/FBX/spoonwithfloor3.fbx",
+   "format": "fbx",
+   "sizeBytes": 593900,
+   "function": "otro",
+   "category": "otro",
+   "hash": "740fb857f6888443f3e2357c7c2d9a00cab4f219779241bf8b02cbcba6806365"
+  },
+  {
+   "name": "squeezer.fbx",
+   "path": "VRChef_modelos/FBX/squeezer.fbx",
+   "format": "fbx",
+   "sizeBytes": 1958140,
+   "function": "otro",
+   "category": "otro",
+   "hash": "1a0b65adcd71fb0e82642c0d695e2b29a95221939ca4c69495b1ef8908360165"
+  },
+  {
+   "name": "tencere.fbx",
+   "path": "VRChef_modelos/FBX/tencere.fbx",
+   "format": "fbx",
+   "sizeBytes": 997356,
+   "function": "otro",
+   "category": "otro",
+   "hash": "e55e678205696c329b5b6d27025c53ba2adb610a04b2639fa863790b47019529"
+  },
+  {
+   "name": "tomatoJuice.fbx",
+   "path": "VRChef_modelos/FBX/tomatoJuice.fbx",
+   "format": "fbx",
+   "sizeBytes": 21196,
+   "function": "otro",
+   "category": "otro",
+   "hash": "66337d12bae230ac4988fb9bbe7f23e1fac645ff4d7314e09afa94d818ee8292"
+  },
+  {
+   "name": "untitled.fbx",
+   "path": "VRChef_modelos/FBX/untitled.fbx",
+   "format": "fbx",
+   "sizeBytes": 26908,
+   "function": "otro",
+   "category": "otro",
+   "hash": "5040527378212bbcd88bf6d25ba11f254bf80b7dda6d96c1cfef4d182a505ef2"
+  },
+  {
+   "name": "Aspirator_Big.glb",
+   "path": "VRChef_modelos/GLB/Aspirator_Big.glb",
+   "format": "glb",
+   "sizeBytes": 2445676,
+   "bbox_size": [
+    2.5,
+    1.8,
+    0.437
+   ],
+   "meshes": 1,
+   "materials": 3,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "52b100bb3769ee811f025298ffa1be88e12abe9009eeade8f29a7fc16058934b"
+  },
+  {
+   "name": "Aspirator_Small.glb",
+   "path": "VRChef_modelos/GLB/Aspirator_Small.glb",
+   "format": "glb",
+   "sizeBytes": 1403904,
+   "bbox_size": [
+    1.2242,
+    0.6734,
+    1.2096
+   ],
+   "meshes": 1,
+   "materials": 3,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "53e4771185015a0d80258c0181dd2968e91fa82ccc0f9dc8172dc6e52bcd25cc"
+  },
+  {
+   "name": "Beater.glb",
+   "path": "VRChef_modelos/GLB/Beater.glb",
+   "format": "glb",
+   "sizeBytes": 340524,
+   "bbox_size": [
+    0.0751,
+    0.32,
+    0.0732
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "027ea24cefe157d3a83dffcc9ef90fe6d1c46d9da043c7ffed5bd959ffbc268a"
+  },
+  {
+   "name": "Bowl.glb",
+   "path": "VRChef_modelos/GLB/Bowl.glb",
+   "format": "glb",
+   "sizeBytes": 926112,
+   "bbox_size": [
+    0.1772,
+    0.07,
+    0.1772
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "87dbee337c7d23388a7b11e2ecdd7c64dcbde33e3aca00dbf1c1f9b7ddfa7da9"
+  },
+  {
+   "name": "Bread_1.glb",
+   "path": "VRChef_modelos/GLB/Bread_1.glb",
+   "format": "glb",
+   "sizeBytes": 12076,
+   "bbox_size": [
+    2.8048,
+    1.4526,
+    2.3898
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "9b77969006864c07a920886c388757b9e5bb8dfbf8810eca130c4d311b6c179d"
+  },
+  {
+   "name": "Broccoli.glb",
+   "path": "VRChef_modelos/GLB/Broccoli.glb",
+   "format": "glb",
+   "sizeBytes": 108384,
+   "bbox_size": [
+    0.7873,
+    0.7649,
+    0.8665
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "78f1e648e8cf45de0d521e1f97482dec1b6a789e0e1e678ae815980c56a797e9"
+  },
+  {
+   "name": "Cabbage.glb",
+   "path": "VRChef_modelos/GLB/Cabbage.glb",
+   "format": "glb",
+   "sizeBytes": 3061216,
+   "bbox_size": [
+    1.6214,
+    1.6627,
+    1.6194
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 3,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "63ecd276f9fab26124358b79d97b82c4160eb96846480f6c4df79e45e22d2579"
+  },
+  {
+   "name": "Carrot.glb",
+   "path": "VRChef_modelos/GLB/Carrot.glb",
+   "format": "glb",
+   "sizeBytes": 133712,
+   "bbox_size": [
+    0.3094,
+    0.3056,
+    2.3577
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "49fe5f2523e0cf3faa0b347dc942fb1c521d3b777d2d52c3b34a3447f1b62da1"
+  },
+  {
+   "name": "ChoppingBoard.glb",
+   "path": "VRChef_modelos/GLB/ChoppingBoard.glb",
+   "format": "glb",
+   "sizeBytes": 19688,
+   "bbox_size": [
+    0.2589,
+    0.0184,
+    0.5138
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "aef2b8b88ed3ddd79cb6a811a613515eb161ec43f40d138465f27c711380c504"
+  },
+  {
+   "name": "Constructor.glb",
+   "path": "VRChef_modelos/GLB/Constructor.glb",
+   "format": "glb",
+   "sizeBytes": 1368732,
+   "bbox_size": [
+    0.7926,
+    0.1519,
+    0.9403
+   ],
+   "meshes": 2,
+   "materials": 2,
+   "textures": 2,
+   "animations": 1,
+   "skins": 1,
+   "function": "otro",
+   "category": "otro",
+   "hash": "66f6390590952d0b45d60379ac0616a5332c4f6680f75aaccc5e4ac6f4a41d85"
+  },
+  {
+   "name": "Counter.glb",
+   "path": "VRChef_modelos/GLB/Counter.glb",
+   "format": "glb",
+   "sizeBytes": 47148,
+   "bbox_size": [
+    0.0144,
+    0.0095,
+    0.0001
+   ],
+   "meshes": 23,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b99d2ae99da646aeec4ac7bbca24bc8b26f0154881ae6f1adda90ff474e89026"
+  },
+  {
+   "name": "CubicSphere.glb",
+   "path": "VRChef_modelos/GLB/CubicSphere.glb",
+   "format": "glb",
+   "sizeBytes": 21812,
+   "bbox_size": [
+    0.02,
+    0.02,
+    0.02
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "fe05d0a2c22a01cceb7cadd85d284c8c3d4b65da71f90e9b26b9ca30e182bbcb"
+  },
+  {
+   "name": "Cucumber.glb",
+   "path": "VRChef_modelos/GLB/Cucumber.glb",
+   "format": "glb",
+   "sizeBytes": 47800,
+   "bbox_size": [
+    0.3083,
+    0.2907,
+    0.9391
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "f48977b34293ede2703fcab5741a80cd786017dc5c10b604a5845db6dfd0ad69"
+  },
+  {
+   "name": "Filter_1.glb",
+   "path": "VRChef_modelos/GLB/Filter_1.glb",
+   "format": "glb",
+   "sizeBytes": 246308,
+   "bbox_size": [
+    0.1528,
+    0.3895,
+    0.0518
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "328c9f839cd5156617463116966116a01d334e279ca945108905443e0f873c12"
+  },
+  {
+   "name": "Filter_2.glb",
+   "path": "VRChef_modelos/GLB/Filter_2.glb",
+   "format": "glb",
+   "sizeBytes": 585268,
+   "bbox_size": [
+    0.1196,
+    0.386,
+    0.0578
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "8600b447a18356d6b9365ecd4a531b5532b1526a091e88edb1555276616b73b8"
+  },
+  {
+   "name": "Frying_Pan.glb",
+   "path": "VRChef_modelos/GLB/Frying_Pan.glb",
+   "format": "glb",
+   "sizeBytes": 520236,
+   "bbox_size": [
+    10.8238,
+    6.3318,
+    2.7116
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "aac7621f049f6e3d00a96ba760d9754629feb48f55d343f122104541b46b30b4"
+  },
+  {
+   "name": "GearVrController.glb",
+   "path": "VRChef_modelos/GLB/GearVrController.glb",
+   "format": "glb",
+   "sizeBytes": 598396,
+   "bbox_size": [
+    0.0479,
+    0.0449,
+    0.1042
+   ],
+   "meshes": 7,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d3741122b710d621ef82b3a58586cc1661f578a9a59fb333d27ea5adc32b633b"
+  },
+  {
+   "name": "Glass_1.glb",
+   "path": "VRChef_modelos/GLB/Glass_1.glb",
+   "format": "glb",
+   "sizeBytes": 97044,
+   "bbox_size": [
+    0.0539,
+    0.0937,
+    0.0539
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "9679ac6c12d62b0a7fb300efe3c836134c49544f17698f23caec0daae3df3ab7"
+  },
+  {
+   "name": "Grater.glb",
+   "path": "VRChef_modelos/GLB/Grater.glb",
+   "format": "glb",
+   "sizeBytes": 551380,
+   "bbox_size": [
+    0.1147,
+    0.4075,
+    0.0328
+   ],
+   "meshes": 1,
+   "materials": 3,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "fd27efe84ad2b77697f44921d52163917d869d67221b9675e598cd2b233821c9"
+  },
+  {
+   "name": "Heat.glb",
+   "path": "VRChef_modelos/GLB/Heat.glb",
+   "format": "glb",
+   "sizeBytes": 44520,
+   "bbox_size": [
+    0.0144,
+    0.0095,
+    0.0001
+   ],
+   "meshes": 22,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "7a5313c35878b138255931e29328f8c68155b26b2f1fc124c144132cc07a855f"
+  },
+  {
+   "name": "Kitchen.glb",
+   "path": "VRChef_modelos/GLB/Kitchen.glb",
+   "format": "glb",
+   "sizeBytes": 101202452,
+   "bbox_size": [
+    674.2519,
+    354.3905,
+    557.7839
+   ],
+   "meshes": 1215,
+   "materials": 8,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "5656b743ef7678cc8f19a26e774506c2b767b6f0dbce5c2b081050573f86217e"
+  },
+  {
+   "name": "Knife_1.glb",
+   "path": "VRChef_modelos/GLB/Knife_1.glb",
+   "format": "glb",
+   "sizeBytes": 74212,
+   "bbox_size": [
+    2.4976,
+    0.1,
+    0.2949
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "4d3a4a706045b3c347ec4b69ef4a470392de82f5309952874fe8250ce34914c6"
+  },
+  {
+   "name": "Ladle_1.glb",
+   "path": "VRChef_modelos/GLB/Ladle_1.glb",
+   "format": "glb",
+   "sizeBytes": 388280,
+   "bbox_size": [
+    0.0721,
+    0.2836,
+    0.0572
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "5592fe00910c0c3396075b7e3c5b17d0642833fccd6bdd92b384d40fd1776d0f"
+  },
+  {
+   "name": "Ladle_2.glb",
+   "path": "VRChef_modelos/GLB/Ladle_2.glb",
+   "format": "glb",
+   "sizeBytes": 470676,
+   "bbox_size": [
+    0.0888,
+    0.335,
+    0.0633
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "bde3bf98ddaaeafb41a893d64281f67569bec78cbdcee0e32c23ac9288da6e31"
+  },
+  {
+   "name": "Lemon.glb",
+   "path": "VRChef_modelos/GLB/Lemon.glb",
+   "format": "glb",
+   "sizeBytes": 88708,
+   "bbox_size": [
+    0.0005,
+    0.0005,
+    0.0008
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "796e6f382eda42a4e8a37f80af56400cf4adc80df6fc402512ba9090f3b0da31"
+  },
+  {
+   "name": "Onion.glb",
+   "path": "VRChef_modelos/GLB/Onion.glb",
+   "format": "glb",
+   "sizeBytes": 334312,
+   "bbox_size": [
+    0.6184,
+    0.6184,
+    0.8406
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "9c585a1bfe98791e0ae3a241dbe34a84a0c68ff55d700d357f0f6bf508f3a52a"
+  },
+  {
+   "name": "Oven.glb",
+   "path": "VRChef_modelos/GLB/Oven.glb",
+   "format": "glb",
+   "sizeBytes": 756368,
+   "bbox_size": [
+    0.2456,
+    0.3729,
+    0.3031
+   ],
+   "meshes": 14,
+   "materials": 8,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "8185a649301639f102b696ef79dd4fdda25f0d484ca3122a63312df839f5d76c"
+  },
+  {
+   "name": "Pan_1.glb",
+   "path": "VRChef_modelos/GLB/Pan_1.glb",
+   "format": "glb",
+   "sizeBytes": 826864,
+   "bbox_size": [
+    9.8977,
+    7.405,
+    6.0129
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "434ed80328dc8d6b79bc54588da54eafdf8f9ca40f314a58be0465f5a3744861"
+  },
+  {
+   "name": "Pan_2.glb",
+   "path": "VRChef_modelos/GLB/Pan_2.glb",
+   "format": "glb",
+   "sizeBytes": 838348,
+   "bbox_size": [
+    8.8796,
+    6.3354,
+    5.5049
+   ],
+   "meshes": 2,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "fb9e60e39fd9953747f5f8eb1e8c54f2546a50050389765d3cd013f09d3676a7"
+  },
+  {
+   "name": "Pan_Frying_2.glb",
+   "path": "VRChef_modelos/GLB/Pan_Frying_2.glb",
+   "format": "glb",
+   "sizeBytes": 841524,
+   "bbox_size": [
+    10.8256,
+    6.3354,
+    2.7116
+   ],
+   "meshes": 2,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "6bae8adfeddd7daedb3b5bf353c553954df398f214db95517a7aed26882f9fc4"
+  },
+  {
+   "name": "Pan_Sauce.glb",
+   "path": "VRChef_modelos/GLB/Pan_Sauce.glb",
+   "format": "glb",
+   "sizeBytes": 810052,
+   "bbox_size": [
+    7.7667,
+    4.1966,
+    3.3453
+   ],
+   "meshes": 2,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "2b1da7cf187d8511acad243161541235c2d3a3545de8b59a4d698689d81911cb"
+  },
+  {
+   "name": "Pan_Sauce_2.glb",
+   "path": "VRChef_modelos/GLB/Pan_Sauce_2.glb",
+   "format": "glb",
+   "sizeBytes": 839124,
+   "bbox_size": [
+    5.9141,
+    4.1966,
+    1.8219
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "5ca3a95f4e04e5c72abd68faea63244cccb827c9b9c6159cb2ea06be72086094"
+  },
+  {
+   "name": "Parsley.glb",
+   "path": "VRChef_modelos/GLB/Parsley.glb",
+   "format": "glb",
+   "sizeBytes": 545252,
+   "bbox_size": [
+    1.3309,
+    0.6581,
+    1.659
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "6a6b54177f321100d5bddcb032fbc7d76c1880b5457ec3de8124f9a0bc465e68"
+  },
+  {
+   "name": "Plate_0.glb",
+   "path": "VRChef_modelos/GLB/Plate_0.glb",
+   "format": "glb",
+   "sizeBytes": 227672,
+   "bbox_size": [
+    0.2097,
+    0.2097,
+    0.0216
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "ed51f76d9123bcb26917eb5351e1b7b8279e0670e56417afd4d4f867b5884e59"
+  },
+  {
+   "name": "Plate_2.glb",
+   "path": "VRChef_modelos/GLB/Plate_2.glb",
+   "format": "glb",
+   "sizeBytes": 468908,
+   "bbox_size": [
+    0.2351,
+    0.0213,
+    0.2351
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "2e63e8aae5b218e3bed2cac8f6fd134efc459996bdebd5769195c2d30568b36e"
+  },
+  {
+   "name": "Plate_3.glb",
+   "path": "VRChef_modelos/GLB/Plate_3.glb",
+   "format": "glb",
+   "sizeBytes": 696240,
+   "bbox_size": [
+    0.3114,
+    0.0231,
+    0.3114
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "a46199dcbee49e2df43ff31b461ab3490d586bf4d682bdbc1d2d661dec94eb73"
+  },
+  {
+   "name": "Pot_1.glb",
+   "path": "VRChef_modelos/GLB/Pot_1.glb",
+   "format": "glb",
+   "sizeBytes": 347180,
+   "bbox_size": [
+    0.2617,
+    0.2915,
+    0.2617
+   ],
+   "meshes": 5,
+   "materials": 3,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "986e645e1a50ab6d337f3876384433fe671215c3330f332f9c60d31bdf8d5f1c"
+  },
+  {
+   "name": "Pot_Sauce.glb",
+   "path": "VRChef_modelos/GLB/Pot_Sauce.glb",
+   "format": "glb",
+   "sizeBytes": 826992,
+   "bbox_size": [
+    7.4179,
+    5.2619,
+    3.4729
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "6e55de27ad73fcaf069a0e38558292092dad9cd3b63184b6a100f755f75829e4"
+  },
+  {
+   "name": "Pot_Sauce_2.glb",
+   "path": "VRChef_modelos/GLB/Pot_Sauce_2.glb",
+   "format": "glb",
+   "sizeBytes": 827112,
+   "bbox_size": [
+    7.4179,
+    5.2619,
+    3.4729
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d9e435e9f9113cdc802b18fcfc299581f825dcb5f8bb662433953a1a697e0c11"
+  },
+  {
+   "name": "Refrigerator.glb",
+   "path": "VRChef_modelos/GLB/Refrigerator.glb",
+   "format": "glb",
+   "sizeBytes": 2098268,
+   "bbox_size": [
+    17.7178,
+    11.0352,
+    25.3196
+   ],
+   "meshes": 33,
+   "materials": 7,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "e8a5334ab006516f665c415610fdb747be047f72219f6e63a61e5c49181c8f86"
+  },
+  {
+   "name": "Ribs_1.glb",
+   "path": "VRChef_modelos/GLB/Ribs_1.glb",
+   "format": "glb",
+   "sizeBytes": 16384,
+   "bbox_size": [
+    0.1694,
+    0.4528,
+    0.6403
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "c0eeefeb9040863ace01356d1f7a6eb5a2f92d960571cbb080958464967c5179"
+  },
+  {
+   "name": "Ribs_2.glb",
+   "path": "VRChef_modelos/GLB/Ribs_2.glb",
+   "format": "glb",
+   "sizeBytes": 4940,
+   "bbox_size": [
+    0.1119,
+    0.1895,
+    0.428
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "64fa6ac3d0151e55330bb7dccb69be03b07c44904290131bef66a0fc97e42d72"
+  },
+  {
+   "name": "Ribs_3.glb",
+   "path": "VRChef_modelos/GLB/Ribs_3.glb",
+   "format": "glb",
+   "sizeBytes": 6068,
+   "bbox_size": [
+    0.1,
+    0.2523,
+    0.6013
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "435626402b85daf42c886170ab3db041cd4d2f8f8297a8a5f81ab9fc4bd713f7"
+  },
+  {
+   "name": "Ribs_4.glb",
+   "path": "VRChef_modelos/GLB/Ribs_4.glb",
+   "format": "glb",
+   "sizeBytes": 9896,
+   "bbox_size": [
+    0.1808,
+    0.3632,
+    0.4208
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "cac8b70141fd1e0faaf4e0943e2407cc1f6d2c58217fb56eb1e1a452724a872b"
+  },
+  {
+   "name": "Slicer.glb",
+   "path": "VRChef_modelos/GLB/Slicer.glb",
+   "format": "glb",
+   "sizeBytes": 303812,
+   "bbox_size": [
+    0.0754,
+    0.1947,
+    0.0188
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "1ea0ff6690623838c12b7f1f59364c1ced9c636a0ac28c75ad6cb4f4595cf498"
+  },
+  {
+   "name": "Spatula_1.glb",
+   "path": "VRChef_modelos/GLB/Spatula_1.glb",
+   "format": "glb",
+   "sizeBytes": 395400,
+   "bbox_size": [
+    0.0796,
+    0.3442,
+    0.0234
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "f8cedf36aa46975ac5e868202d15f2c897298bc09ddfbffe8af490db1df34d4a"
+  },
+  {
+   "name": "Spatula_2.glb",
+   "path": "VRChef_modelos/GLB/Spatula_2.glb",
+   "format": "glb",
+   "sizeBytes": 449484,
+   "bbox_size": [
+    0.12,
+    0.3768,
+    0.0626
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "e574f81fa1f0ad693ab97dab1be8d6cb6f5bd57ed42bfcac13ee31cb040344b9"
+  },
+  {
+   "name": "Spoon.glb",
+   "path": "VRChef_modelos/GLB/Spoon.glb",
+   "format": "glb",
+   "sizeBytes": 298624,
+   "bbox_size": [
+    0.0509,
+    0.3256,
+    0.0307
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "826db5c7461cb9e6c51045b529afbe63ce0b6a86ef68790a42e3475ebe5934f5"
+  },
+  {
+   "name": "SpringOnion.glb",
+   "path": "VRChef_modelos/GLB/SpringOnion.glb",
+   "format": "glb",
+   "sizeBytes": 779260,
+   "bbox_size": [
+    0.2104,
+    0.2573,
+    3.3562
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 2,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "c1e84a38b689f8c45dbb768d09f5512540226716632557fba0c3345a638c1afa"
+  },
+  {
+   "name": "Straightener.glb",
+   "path": "VRChef_modelos/GLB/Straightener.glb",
+   "format": "glb",
+   "sizeBytes": 216780,
+   "bbox_size": [
+    0.0685,
+    0.229,
+    0.0368
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "c898912cf9658e6f53623c8c3abc1e38c17b1836d21e78018fdb95328082ec83"
+  },
+  {
+   "name": "TENCERE__Secil.glb",
+   "path": "VRChef_modelos/GLB/TENCERE__Secil.glb",
+   "format": "glb",
+   "sizeBytes": 1141596,
+   "bbox_size": [
+    9.5135,
+    9.5135,
+    5.9232
+   ],
+   "meshes": 5,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "e32e59e4f4ffe229158424b705b00d59dd9651c9df9d2b4d8764619949462028"
+  },
+  {
+   "name": "Table_1.glb",
+   "path": "VRChef_modelos/GLB/Table_1.glb",
+   "format": "glb",
+   "sizeBytes": 714464,
+   "bbox_size": [
+    21.4462,
+    16.5788,
+    9.7106
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "a0525832d90f8814f881578359ef5f184691a28153ea9b9c7af6261d7107e042"
+  },
+  {
+   "name": "Table_2.glb",
+   "path": "VRChef_modelos/GLB/Table_2.glb",
+   "format": "glb",
+   "sizeBytes": 2742808,
+   "bbox_size": [
+    35.0099,
+    24.3955,
+    12
+   ],
+   "meshes": 1,
+   "materials": 4,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d13fe9a17ccd2fc9348954003fe14c5d1b9c5cd1e247c7e2fc1c59d158a02037"
+  },
+  {
+   "name": "TestEnvironment.glb",
+   "path": "VRChef_modelos/GLB/TestEnvironment.glb",
+   "format": "glb",
+   "sizeBytes": 14560,
+   "bbox_size": [
+    0.02,
+    0.01,
+    0.02
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "a84123baff50b9664ee41f6dd9ba479b861f372e8db80dd1fb0447c85d7ca3e9"
+  },
+  {
+   "name": "Tomato.glb",
+   "path": "VRChef_modelos/GLB/Tomato.glb",
+   "format": "glb",
+   "sizeBytes": 2024244,
+   "bbox_size": [
+    0.0344,
+    0.0344,
+    0.027
+   ],
+   "meshes": 2,
+   "materials": 2,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "e62bc0f136816f7ec367e0bf4633de101231e35bc66ff537a1b8b9eb76438c7a"
+  },
+  {
+   "name": "VRTK_BasicHand.glb",
+   "path": "VRChef_modelos/GLB/VRTK_BasicHand.glb",
+   "format": "glb",
+   "sizeBytes": 642788,
+   "bbox_size": [
+    0.0017,
+    0.0021,
+    0.0005
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 1,
+   "skins": 1,
+   "function": "otro",
+   "category": "otro",
+   "hash": "73214c6664f29a5006f61a44bf37ffe58e584de0090a668229213809f21f0d02"
+  },
+  {
+   "name": "Ventilation.glb",
+   "path": "VRChef_modelos/GLB/Ventilation.glb",
+   "format": "glb",
+   "sizeBytes": 1876804,
+   "bbox_size": [
+    1.0665,
+    0.6735,
+    0.0353
+   ],
+   "meshes": 1,
+   "materials": 3,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "120114ce3db9bfe68156d26ad17593784caf5e0fdd4e00cde5643d4ee3a87d28"
+  },
+  {
+   "name": "WaterBasicPlane.glb",
+   "path": "VRChef_modelos/GLB/WaterBasicPlane.glb",
+   "format": "glb",
+   "sizeBytes": 4132,
+   "bbox_size": [
+    0.02,
+    0,
+    0.02
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "348c5d1b6384254e5ca74345bd527b90f280edc32edcb0bd694b7be7bdaf38a0"
+  },
+  {
+   "name": "WonderRocks.glb",
+   "path": "VRChef_modelos/GLB/WonderRocks.glb",
+   "format": "glb",
+   "sizeBytes": 866564,
+   "bbox_size": [
+    0.1329,
+    0.0638,
+    0.2029
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "9352b3c33b24bd1a01d5d0bb984c93d7ab5b10fcd43cb853ee993f1970566373"
+  },
+  {
+   "name": "banana_with_flesh.glb",
+   "path": "VRChef_modelos/GLB/banana_with_flesh.glb",
+   "format": "glb",
+   "sizeBytes": 1818804,
+   "bbox_size": [
+    0.0106,
+    0.0317,
+    0.0055
+   ],
+   "meshes": 2,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "45f464eeacb7b2d5c1f711682bb49c4e301a392f8d43dce21b84e6138a25ce7e"
+  },
+  {
+   "name": "bottle.glb",
+   "path": "VRChef_modelos/GLB/bottle.glb",
+   "format": "glb",
+   "sizeBytes": 258376,
+   "bbox_size": [
+    0.0007,
+    0.0015,
+    0.0006
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "88ff84c363700a4321ccd5cf2575696811c08e1202e3e1c4e7ce36f812cb79c7"
+  },
+  {
+   "name": "bowl3.glb",
+   "path": "VRChef_modelos/GLB/bowl3.glb",
+   "format": "glb",
+   "sizeBytes": 130924,
+   "bbox_size": [
+    0.1772,
+    0.07,
+    0.1772
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "97a59a37ceb126021fa7f45e485d7870ad5cf6074c3bebc2293c6112b5ff7eba"
+  },
+  {
+   "name": "bowll.glb",
+   "path": "VRChef_modelos/GLB/bowll.glb",
+   "format": "glb",
+   "sizeBytes": 71800,
+   "bbox_size": [
+    2.9288,
+    1.4992,
+    2.2017
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "6f6b82e82185ddf7dec4eaaf69d665b8f05c76be2d65e80e6edbb70a4c066c4c"
+  },
+  {
+   "name": "broken_glass.glb",
+   "path": "VRChef_modelos/GLB/broken_glass.glb",
+   "format": "glb",
+   "sizeBytes": 52592,
+   "bbox_size": [
+    0.0008,
+    0.0008,
+    0.001
+   ],
+   "meshes": 28,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "2b0bbc03453bf18458431f6e5153b99b653e8e05902493791d041b0f42a5038a"
+  },
+  {
+   "name": "broken_plate.glb",
+   "path": "VRChef_modelos/GLB/broken_plate.glb",
+   "format": "glb",
+   "sizeBytes": 78316,
+   "bbox_size": [
+    0.0015,
+    0.0016,
+    0.0005
+   ],
+   "meshes": 16,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "4da3f1c99b624a51cd66159d1f545eca8cffc2eb774cfd63b80a56ffbc498fc0"
+  },
+  {
+   "name": "bucket.glb",
+   "path": "VRChef_modelos/GLB/bucket.glb",
+   "format": "glb",
+   "sizeBytes": 96452,
+   "bbox_size": [
+    0.0653,
+    0.0293,
+    0.0653
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "da0043298ed5b7fc8199755546f1f27daf51bbabb9eaff3c21ec57ed36a7b697"
+  },
+  {
+   "name": "chicken_fillet.glb",
+   "path": "VRChef_modelos/GLB/chicken_fillet.glb",
+   "format": "glb",
+   "sizeBytes": 16896,
+   "bbox_size": [
+    0.0165,
+    0.1028,
+    0.072
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "643c1a61e17286d7a213b9fca69b3bad79f0f316cad7a027b3a21ac166837ffd"
+  },
+  {
+   "name": "cucumber_rig.glb",
+   "path": "VRChef_modelos/GLB/cucumber_rig.glb",
+   "format": "glb",
+   "sizeBytes": 94936,
+   "bbox_size": [
+    0.3083,
+    0.2907,
+    0.9391
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "140e41698360b603cdb3f14bca9cc40cabef2c4e0e79b937fe4dd0d78ab30ba4"
+  },
+  {
+   "name": "cucurbita.glb",
+   "path": "VRChef_modelos/GLB/cucurbita.glb",
+   "format": "glb",
+   "sizeBytes": 54076,
+   "bbox_size": [
+    0.539,
+    0.2156,
+    0.1259
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 2,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d1a33b6b3579032370c3b46f7ba7915141d77347de9d054f1844b05ff4d8ec35"
+  },
+  {
+   "name": "egg.glb",
+   "path": "VRChef_modelos/GLB/egg.glb",
+   "format": "glb",
+   "sizeBytes": 59952,
+   "bbox_size": [
+    0.2444,
+    0.3404,
+    0.2667
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "8f3697a42248b2865f3badd250178b55852344f74698f645c11e5947f6bc1410"
+  },
+  {
+   "name": "egg_inside.glb",
+   "path": "VRChef_modelos/GLB/egg_inside.glb",
+   "format": "glb",
+   "sizeBytes": 16888,
+   "bbox_size": [
+    3.7516,
+    0.0984,
+    17.3251
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "85914182f623fcdc1ba3118429ff400030bce51ae3f3c4791d2942908af766fb"
+  },
+  {
+   "name": "eggplant.glb",
+   "path": "VRChef_modelos/GLB/eggplant.glb",
+   "format": "glb",
+   "sizeBytes": 65124,
+   "bbox_size": [
+    0.3448,
+    0.3362,
+    0.2782
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b5b0eb8178569021d2483db7cfdb3b487d1708f3692ee006ad5fb30fa731e3d3"
+  },
+  {
+   "name": "faucet.glb",
+   "path": "VRChef_modelos/GLB/faucet.glb",
+   "format": "glb",
+   "sizeBytes": 18708,
+   "bbox_size": [
+    0.0934,
+    0.1859,
+    0.0133
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "3e2e619c40b83e32f6c008bbcbdfdad05b0241d77852de20c9f1923c02840514"
+  },
+  {
+   "name": "flour1.glb",
+   "path": "VRChef_modelos/GLB/flour1.glb",
+   "format": "glb",
+   "sizeBytes": 89056,
+   "bbox_size": [
+    0.2256,
+    0.0495,
+    0.2254
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0cf174f41dcfae557549239eb6251b383b7837e62c40283748c62bfccff3aeeb"
+  },
+  {
+   "name": "frying_pan_1.glb",
+   "path": "VRChef_modelos/GLB/frying_pan_1.glb",
+   "format": "glb",
+   "sizeBytes": 520564,
+   "bbox_size": [
+    10.8238,
+    2.7116,
+    6.3318
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "151dca0ee5ec3f747435051a7d56caaf447a9e44ca89c373a1bf34db0ffcfe66"
+  },
+  {
+   "name": "full_cracked_egg.glb",
+   "path": "VRChef_modelos/GLB/full_cracked_egg.glb",
+   "format": "glb",
+   "sizeBytes": 87380,
+   "bbox_size": [
+    0.0007,
+    0.0008,
+    0.0007
+   ],
+   "meshes": 15,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "f67213edbc794351ca52fd6ef1bd0028629eef2b44cc2e7153ea4193932fbd01"
+  },
+  {
+   "name": "glass.glb",
+   "path": "VRChef_modelos/GLB/glass.glb",
+   "format": "glb",
+   "sizeBytes": 8436,
+   "bbox_size": [
+    0.0013,
+    0.001,
+    0.001
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "51be120e977655a2dd88b29abf210c6710a1cbcab1505896afb54a3dfc8ac62e"
+  },
+  {
+   "name": "half_cracked_egg.glb",
+   "path": "VRChef_modelos/GLB/half_cracked_egg.glb",
+   "format": "glb",
+   "sizeBytes": 67976,
+   "bbox_size": [
+    0.0241,
+    0.0211,
+    0.0207
+   ],
+   "meshes": 2,
+   "materials": 3,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "e582a7c25936bb129c5899d14def867ec0f349dc831570bcc8e6be186ca4b51c"
+  },
+  {
+   "name": "hotplate_oven.glb",
+   "path": "VRChef_modelos/GLB/hotplate_oven.glb",
+   "format": "glb",
+   "sizeBytes": 176408,
+   "bbox_size": [
+    0.0088,
+    0.001,
+    0.0089
+   ],
+   "meshes": 5,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0b7494aa1b76f2870be71950dd41b7dacacfb1dda927f566d0775397307b1654"
+  },
+  {
+   "name": "jar.glb",
+   "path": "VRChef_modelos/GLB/jar.glb",
+   "format": "glb",
+   "sizeBytes": 362924,
+   "bbox_size": [
+    0.162,
+    0.162,
+    0.2602
+   ],
+   "meshes": 2,
+   "materials": 3,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "819cf93befb6167706889314d0c8785e06cd38c8ac05711d0210a02f52952eab"
+  },
+  {
+   "name": "jarwithflour5.glb",
+   "path": "VRChef_modelos/GLB/jarwithflour5.glb",
+   "format": "glb",
+   "sizeBytes": 509380,
+   "bbox_size": [
+    0.2099,
+    0.162,
+    0.2122
+   ],
+   "meshes": 3,
+   "materials": 4,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0a1396ff192a4729bce3c83f08058fce5ec5c53d7022045f9b65ac2c7c1b5517"
+  },
+  {
+   "name": "mashedPotato2.glb",
+   "path": "VRChef_modelos/GLB/mashedPotato2.glb",
+   "format": "glb",
+   "sizeBytes": 38284,
+   "bbox_size": [
+    0.0204,
+    0.0213,
+    0.0107
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "7d6a7bfa4459d0bed404c0142c57def7de246fe9d408211f53fc594795cc6a0b"
+  },
+  {
+   "name": "mixed.glb",
+   "path": "VRChef_modelos/GLB/mixed.glb",
+   "format": "glb",
+   "sizeBytes": 16380,
+   "bbox_size": [
+    0.0194,
+    0.0194,
+    0.0002
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "9ec99bb0080b97c210bda8b52dba564dd9ae1799f9ad71f0edf1d8a05fd95aca"
+  },
+  {
+   "name": "mushroom.glb",
+   "path": "VRChef_modelos/GLB/mushroom.glb",
+   "format": "glb",
+   "sizeBytes": 4367812,
+   "bbox_size": [
+    0.0003,
+    0.0003,
+    0.0003
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "0f1392a34da4080b8bb4d9d63a3c711e3a561977b2443044b7348cf8c7629ac6"
+  },
+  {
+   "name": "onion_rig.glb",
+   "path": "VRChef_modelos/GLB/onion_rig.glb",
+   "format": "glb",
+   "sizeBytes": 613424,
+   "bbox_size": [
+    0.6456,
+    0.6453,
+    0.8406
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "75e70ac4ed5cde78c6a2099b6f1f2ef27c04d91f2ef95c3a3cd6f17500ea3334"
+  },
+  {
+   "name": "pepper.glb",
+   "path": "VRChef_modelos/GLB/pepper.glb",
+   "format": "glb",
+   "sizeBytes": 349672,
+   "bbox_size": [
+    0.4189,
+    0.1544,
+    0.9198
+   ],
+   "meshes": 1,
+   "materials": 2,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "8f32656f6d0c41f73e1bfa2466d64f3f93500a95db105ab7e124739053c7df98"
+  },
+  {
+   "name": "plate.glb",
+   "path": "VRChef_modelos/GLB/plate.glb",
+   "format": "glb",
+   "sizeBytes": 10804,
+   "bbox_size": [
+    0.2969,
+    0.038,
+    0.3
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "b2fc6a41c181622b85ac63e71086a4580b7c1208a6bc331345bc5c83876f38d6"
+  },
+  {
+   "name": "potato.glb",
+   "path": "VRChef_modelos/GLB/potato.glb",
+   "format": "glb",
+   "sizeBytes": 13708,
+   "bbox_size": [
+    0.1092,
+    0.0631,
+    0.0655
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "d6f520f58dfdc412f397da305cd6b11aac5749a640164ddb00e1442727362c43"
+  },
+  {
+   "name": "potato__Potato.glb",
+   "path": "VRChef_modelos/GLB/potato__Potato.glb",
+   "format": "glb",
+   "sizeBytes": 27824,
+   "bbox_size": [
+    0.8695,
+    0.7637,
+    0.6001
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "44d61a25d47b039dec83d53f09f6a29c6ebb0b93c00195f93022a0839d3b6fb6"
+  },
+  {
+   "name": "potato_rig.glb",
+   "path": "VRChef_modelos/GLB/potato_rig.glb",
+   "format": "glb",
+   "sizeBytes": 92288,
+   "bbox_size": [
+    0.1092,
+    0.0631,
+    0.0655
+   ],
+   "meshes": 6,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "798b7bc77e1d34c32f5d099ea6cb9992a4f95e364c51f60f2bdd36b97ef18605"
+  },
+  {
+   "name": "potato_with_flesh.glb",
+   "path": "VRChef_modelos/GLB/potato_with_flesh.glb",
+   "format": "glb",
+   "sizeBytes": 55436,
+   "bbox_size": [
+    0.1092,
+    0.0631,
+    0.0655
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "03c3c5a528fc0f55bd40c36cb0601f64e2f711ffb4b873a139687ac34d7a10c7"
+  },
+  {
+   "name": "sausage.glb",
+   "path": "VRChef_modelos/GLB/sausage.glb",
+   "format": "glb",
+   "sizeBytes": 31064,
+   "bbox_size": [
+    0.9047,
+    0.0705,
+    0.0659
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "41f1cd23c11c39a450b0b2853c9c114d76af2a2d8b5e2d2cf9c370481360ca80"
+  },
+  {
+   "name": "silicone_spatula.glb",
+   "path": "VRChef_modelos/GLB/silicone_spatula.glb",
+   "format": "glb",
+   "sizeBytes": 287412,
+   "bbox_size": [
+    0.0081,
+    0.0291,
+    0.0016
+   ],
+   "meshes": 2,
+   "materials": 2,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "eab3494d69e02fa334532bc9e0d16add7379939dce928bbc9b937fd694135128"
+  },
+  {
+   "name": "slicedPotato.glb",
+   "path": "VRChef_modelos/GLB/slicedPotato.glb",
+   "format": "glb",
+   "sizeBytes": 10004,
+   "bbox_size": [
+    0.1036,
+    0.0626,
+    0.0323
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "39de84634478a75f3b59fbfef1fab603a5288c1133ef5ecc414d89cfb0c54ccd"
+  },
+  {
+   "name": "smashedTomato.glb",
+   "path": "VRChef_modelos/GLB/smashedTomato.glb",
+   "format": "glb",
+   "sizeBytes": 165340,
+   "bbox_size": [
+    0.0463,
+    0.0331,
+    0.027
+   ],
+   "meshes": 2,
+   "materials": 2,
+   "textures": 1,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "c5a64943c550215d3f5d26dcb0e23fbc3d0b827e92e7a5b0d68c7e1bf63ab4a6"
+  },
+  {
+   "name": "spoonwithfloor3.glb",
+   "path": "VRChef_modelos/GLB/spoonwithfloor3.glb",
+   "format": "glb",
+   "sizeBytes": 584776,
+   "bbox_size": [
+    0.1144,
+    0.3373,
+    0.0835
+   ],
+   "meshes": 2,
+   "materials": 4,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "c9d039ed8df73cd8e75f547b58bc20f314f19786c56c632a345666c3aeb6d220"
+  },
+  {
+   "name": "squeezer.glb",
+   "path": "VRChef_modelos/GLB/squeezer.glb",
+   "format": "glb",
+   "sizeBytes": 1716412,
+   "bbox_size": [
+    0.3329,
+    0.3329,
+    0.1012
+   ],
+   "meshes": 2,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "ebd97c25f9b21984c41951bdcfc1b268b318ecf406f78b6b0482e023368c3500"
+  },
+  {
+   "name": "tencere.glb",
+   "path": "VRChef_modelos/GLB/tencere.glb",
+   "format": "glb",
+   "sizeBytes": 830696,
+   "bbox_size": [
+    7.405,
+    7.405,
+    6.0129
+   ],
+   "meshes": 5,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "45db0405ed308387d78c354c9266efaea7f6c74d4bf2fa72408b13d1b586dfd6"
+  },
+  {
+   "name": "tomatoJuice.glb",
+   "path": "VRChef_modelos/GLB/tomatoJuice.glb",
+   "format": "glb",
+   "sizeBytes": 14360,
+   "bbox_size": [
+    0.0174,
+    0.0168,
+    0.0038
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "ee1a787f3d1706aa5626eb246c821cf2fe760b87b03b89a2f0ec9809b556e245"
+  },
+  {
+   "name": "untitled.glb",
+   "path": "VRChef_modelos/GLB/untitled.glb",
+   "format": "glb",
+   "sizeBytes": 7216,
+   "bbox_size": [
+    0.0096,
+    0.0096,
+    0.0038
+   ],
+   "meshes": 1,
+   "materials": 1,
+   "textures": 0,
+   "animations": 0,
+   "skins": 0,
+   "function": "otro",
+   "category": "otro",
+   "hash": "42872354a2e3d0c7d70f032694eedae8211a56e384069695df4c738c1cd6c92e"
+  },
+  {
+   "name": "INFO_audios_texturas.txt",
+   "path": "VRChef_modelos/INFO_audios_texturas.txt",
+   "format": "txt",
+   "sizeBytes": 8409,
+   "function": "otro",
+   "category": "otro",
+   "hash": "59c62648968e8bd5afef0cd57d93b2628ed3e96e89f96e49fdc6db5ebc81be12"
+  },
+  {
+   "name": "INFO_modelos.txt",
+   "path": "VRChef_modelos/INFO_modelos.txt",
+   "format": "txt",
+   "sizeBytes": 11675,
+   "function": "otro",
+   "category": "otro",
+   "hash": "4742d481fdd7b783a9c8cc269969d39025459caadef1c7500e21301422816dc3"
+  },
+  {
+   "name": "beep.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Furniture/Oven/beep.wav",
+   "format": "wav",
+   "sizeBytes": 37368,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "473aaafa835810691d37e51588490348efa5e30660dc8aae732a58d704ec734d"
+  },
+  {
+   "name": "oven_cover_close_fast.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Furniture/Oven/oven_cover_close_fast.wav",
+   "format": "wav",
+   "sizeBytes": 112760,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "594a1ebbc4df2291741bc510d486b18babc4c2bf243d672c4f3f42748bf06f80"
+  },
+  {
+   "name": "oven_cover_close_slow.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Furniture/Oven/oven_cover_close_slow.wav",
+   "format": "wav",
+   "sizeBytes": 107464,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "7efb1ed812a4f7101b9c12183f95cf91d5b5ccd9f48678dec704a0d24c984e59"
+  },
+  {
+   "name": "oven_cover_open.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Furniture/Oven/oven_cover_open.wav",
+   "format": "wav",
+   "sizeBytes": 117820,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "d44351b1087446a3489942b39145c82ea24f9f3d26c0b8297effe2d24a3bd6cd"
+  },
+  {
+   "name": "oven_loop.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Furniture/Oven/oven_loop.wav",
+   "format": "wav",
+   "sizeBytes": 326112,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "61952a86acaf0525f997236dd196ca83a821ac6a3a11841aa678d5cc0bce145c"
+  },
+  {
+   "name": "oven_start.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Furniture/Oven/oven_start.wav",
+   "format": "wav",
+   "sizeBytes": 881600,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "cea16a7a64ba0748de4fa887cfac51eb5c38ed05b7ed3b3e94209900d074edb4"
+  },
+  {
+   "name": "oven_stop.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Furniture/Oven/oven_stop.wav",
+   "format": "wav",
+   "sizeBytes": 2068720,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "0fc064c819f916f5af3bc6fcac72de292c79377ec2c467b3ed437973cf83f971"
+  },
+  {
+   "name": "glass_break.mp3",
+   "path": "VRChef_modelos/Sounds/SFX/Tools/Glass-Plate/glass_break.mp3",
+   "format": "mp3",
+   "sizeBytes": 18941,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "4472b336897d65d2356e170de332b00882cce388ff047e57fbf5b95df5c7a1aa"
+  },
+  {
+   "name": "Knife_Drop_2.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Tools/Knife/Knife_Drop_2.wav",
+   "format": "wav",
+   "sizeBytes": 108788,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "0bffcea70b93df81f147367820a6dc7ce4a07487f5ac10cce5586f57fc75ef00"
+  },
+  {
+   "name": "Knife_Drop_3.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Tools/Knife/Knife_Drop_3.wav",
+   "format": "wav",
+   "sizeBytes": 101828,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "c7b6a3affac1fc4c8e5d1904887f2c444326e51d0f9cab9768ce623e48651b75"
+  },
+  {
+   "name": "Knife_Drop_4.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Tools/Knife/Knife_Drop_4.wav",
+   "format": "wav",
+   "sizeBytes": 110520,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "2f64109474f756a27c83193b05f4529d50333961b35681f0a986766ffea09516"
+  },
+  {
+   "name": "Knife_Drop_5.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Tools/Knife/Knife_Drop_5.wav",
+   "format": "wav",
+   "sizeBytes": 111396,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "5ddf300f183148293df72788618d6cdc0958761af51132f7ec5b71f8eab9dda1"
+  },
+  {
+   "name": "Knife_Grab_1.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Tools/Knife/Knife_Grab_1.wav",
+   "format": "wav",
+   "sizeBytes": 9168,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "66189cd33beae0f7e892fe1de42c4327ffa3d8ee313e5e133127c661ac7a5ee7"
+  },
+  {
+   "name": "Knife_Grab_2.wav",
+   "path": "VRChef_modelos/Sounds/SFX/Tools/Knife/Knife_Grab_2.wav",
+   "format": "wav",
+   "sizeBytes": 6480,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "fe821d231e4c9dfc11d70975db4800cffb5168ffe82670ce94378c81a891ce01"
+  },
+  {
+   "name": "full_crack_sound.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Egg/full_crack_sound.wav",
+   "format": "wav",
+   "sizeBytes": 100022,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "a74dbc89ab13add5734697e826cb3c393f899c2867eeceb50e7feb645316baed"
+  },
+  {
+   "name": "half_crack_sound.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Egg/half_crack_sound.wav",
+   "format": "wav",
+   "sizeBytes": 58788,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "74d908ef1b3d1e46b53eeb8fbb6c0b5263043295d9b629bc9f2d20cfde5003e0"
+  },
+  {
+   "name": "juice.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Lemon/juice.wav",
+   "format": "wav",
+   "sizeBytes": 753368,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "4a633535e9ca8645e86cbb236b81c75710c8001b80e5ac3b2dfa4d569563dbfa"
+  },
+  {
+   "name": "juice2.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Lemon/juice2.wav",
+   "format": "wav",
+   "sizeBytes": 199864,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "a6d752af4c73516b344eeeb3d0971812e2ea5102111de0191f9692e5c53f0a87"
+  },
+  {
+   "name": "Tomato_Chop_1.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Chop_1.wav",
+   "format": "wav",
+   "sizeBytes": 47248,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "ce4ba3383806cc1f051c341d5163f321b24d2cc5fbcb8c412174ebd35ff3eb32"
+  },
+  {
+   "name": "Tomato_Chop_2.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Chop_2.wav",
+   "format": "wav",
+   "sizeBytes": 49452,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "ebc9e93c78106e3b3ba3bdd46c5fcfa6cfe5ebd828699fd4792242b480b7a96b"
+  },
+  {
+   "name": "Tomato_Chop_3.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Chop_3.wav",
+   "format": "wav",
+   "sizeBytes": 97972,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "630e32346ef97ce452d9946174e10ff24f7c2f8ca795f2c15a061cc880e22154"
+  },
+  {
+   "name": "Tomato_Chop_4.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Chop_4.wav",
+   "format": "wav",
+   "sizeBytes": 39980,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "2dc93889adc7c5ecbfbefd502dafda52952189fc5f459670feddefb60651fa4a"
+  },
+  {
+   "name": "Tomato_Chop_6.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Chop_6.wav",
+   "format": "wav",
+   "sizeBytes": 46784,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "46c70b99bf6fbe3272e3eafe8a05a4168ad57cc169d7a88771629fd4d0ec273f"
+  },
+  {
+   "name": "Tomato_Squelch.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Squelch.wav",
+   "format": "wav",
+   "sizeBytes": 17732,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "b37b217b603b330fead9e648ebb4b9450c5bf30e6186a7e101cf37950d33daf2"
+  },
+  {
+   "name": "Tomato_Squelch_2.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Squelch_2.wav",
+   "format": "wav",
+   "sizeBytes": 26852,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "74a6569e1999014add8afb18784e345b56ef18acc33350ac4e96a864a870ff9a"
+  },
+  {
+   "name": "Tomato_Squelch_3.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Squelch_3.wav",
+   "format": "wav",
+   "sizeBytes": 18092,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "1e714b16b69cd042c7b96dbc956125c8ddbadb1a40dfe68aea0feb300c118b87"
+  },
+  {
+   "name": "Tomato_Squelch_4.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Squelch_4.wav",
+   "format": "wav",
+   "sizeBytes": 24360,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "ef6291ae727994ee2fb04bd722e2f8cb799e2eaa28069011d8961e74a02460a4"
+  },
+  {
+   "name": "Tomato_Squelch_5.wav",
+   "path": "VRChef_modelos/Sounds/SFX/VegetablesFruits/Vegetables/Tomato/Tomato_Squelch_5.wav",
+   "format": "wav",
+   "sizeBytes": 23360,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "31119aa6f8fd944e8e859268528f2c323415be059410d09d777c788593a7fec6"
+  },
+  {
+   "name": "boiling_water.wav",
+   "path": "VRChef_modelos/Sounds/SFX/boiling_water.wav",
+   "format": "wav",
+   "sizeBytes": 3649942,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "da5717132fe8f5404ffa905420bbaed4c83ae935864933567bb0204b7e4a041a"
+  },
+  {
+   "name": "frying_sound.mp3",
+   "path": "VRChef_modelos/Sounds/SFX/frying_sound.mp3",
+   "format": "mp3",
+   "sizeBytes": 336191,
+   "function": "sonido",
+   "category": "audio",
+   "hash": "d39a73d91e36dcb5829020dc37f5e8deee26502b4dd9f00f06c6d95d1370aecf"
+  },
+  {
+   "name": "Bread_1_Body.jpg",
+   "path": "VRChef_modelos/Textures/Food/Bread/Bread_1/Bread_1_Body.jpg",
+   "format": "jpg",
+   "sizeBytes": 456130,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "0f720bf12d1be252dbad8d55e355941c9753e346577e008a08d93e5c650c262f"
+  },
+  {
+   "name": "Bread_1_Body_Detail.jpg",
+   "path": "VRChef_modelos/Textures/Food/Bread/Bread_1/Bread_1_Body_Detail.jpg",
+   "format": "jpg",
+   "sizeBytes": 374091,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "915fef2049299237a4406f03c8fc6f98ad5763e02b9f5be2fdfb85f930f7456f"
+  },
+  {
+   "name": "Bread_1_Inner.jpg",
+   "path": "VRChef_modelos/Textures/Food/Bread/Bread_1/Bread_1_Inner.jpg",
+   "format": "jpg",
+   "sizeBytes": 32048,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "676ae53a39fdbbc266af9f9b59e7d71b88dbd7ce62a99ee3aa8fac70402ada84"
+  },
+  {
+   "name": "Bread_1_Inner_Detail.jpg",
+   "path": "VRChef_modelos/Textures/Food/Bread/Bread_1/Bread_1_Inner_Detail.jpg",
+   "format": "jpg",
+   "sizeBytes": 28914,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "af9d4c8cb76a85aa1dd182b8b4ef78eb864cb83b72df3ec4ce527d17b762ea13"
+  },
+  {
+   "name": "flour.jpg",
+   "path": "VRChef_modelos/Textures/Food/Bread/flour.jpg",
+   "format": "jpg",
+   "sizeBytes": 5225654,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "327e7c35d89376ccf25c18d19ee584633ee3f8b01e9c756db0cc87de47c20a23"
+  },
+  {
+   "name": "banana.png",
+   "path": "VRChef_modelos/Textures/Food/Fruits/Banana/banana.png",
+   "format": "png",
+   "sizeBytes": 3012157,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "75b19aff3afe89d23de3a7c18b8315f147affcf0ff844bcc51578956aebab13e"
+  },
+  {
+   "name": "banana_flesh.jpg",
+   "path": "VRChef_modelos/Textures/Food/Fruits/Banana/banana_flesh.jpg",
+   "format": "jpg",
+   "sizeBytes": 127752,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "d85363d2b24e81503f84c4697dd95ef6170eff87101c95c33ac62800bb022635"
+  },
+  {
+   "name": "ChickenFillet_Body.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Chicken Fillet/ChickenFillet_Body.png",
+   "format": "png",
+   "sizeBytes": 4286639,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "ccc0fa9a236f64f21d2efbcf785a7227f99fcebb3ad60a7c153d140756ffc014"
+  },
+  {
+   "name": "fried_chicken_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Chicken Fillet/fried_chicken_texture.png",
+   "format": "png",
+   "sizeBytes": 4752601,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "33762ce050489847f07b93a6df7aa536337641fa08e55fa2dd4cea8dfdb5249b"
+  },
+  {
+   "name": "fried_chicken_texture_2.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Chicken Fillet/fried_chicken_texture_2.png",
+   "format": "png",
+   "sizeBytes": 507337,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "c0c7e062b9aa3f28b0c61ed135f8c63fcdf39dd5641a795b6f4efa6ae6ab1d89"
+  },
+  {
+   "name": "fried_chicken_texture_3.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Chicken Fillet/fried_chicken_texture_3.png",
+   "format": "png",
+   "sizeBytes": 195239,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "688fd07bd0c352bcf6bbc6c76cdbe4969725d4d084990f0879e475ed69d648cf"
+  },
+  {
+   "name": "fried_meat_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Meat/fried_meat_texture.png",
+   "format": "png",
+   "sizeBytes": 146820,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "bb35c126790d384aee8f9b06b186d718c119fd3b764d918ca6b4f167dc2df89d"
+  },
+  {
+   "name": "Ribs_Body.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Ribs/Ribs_Body.png",
+   "format": "png",
+   "sizeBytes": 1444260,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "214045dd033de4b9348d9ae3a734220fe5b771cc085edee6e8776c934cfdbb3d"
+  },
+  {
+   "name": "Sausage_Body.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Sausage/Sausage_Body.png",
+   "format": "png",
+   "sizeBytes": 150013,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "cc96d252bb49e24023ea452ca2b1014449adb02ec1a854ea1ac452fd0262b731"
+  },
+  {
+   "name": "fried_sausage_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Sausage/fried_sausage_texture.png",
+   "format": "png",
+   "sizeBytes": 3331,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "014490640a3e0d1be3cde8dadb490ad97c475206e36b7697fb200e2a36354306"
+  },
+  {
+   "name": "fried_sausage_texture_2.png",
+   "path": "VRChef_modelos/Textures/Food/Meat/Sausage/fried_sausage_texture_2.png",
+   "format": "png",
+   "sizeBytes": 12065,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "73a89c3b414b57502804ad6171fa3788f937ba40e86c6f60f461d70a25859230"
+  },
+  {
+   "name": "Broccoli_Body_DIF.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Broccoli/Broccoli_Body_DIF.jpg",
+   "format": "jpg",
+   "sizeBytes": 2392792,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "34954ce4a78f306e0ad9f6136f641f19bf9c9c0c434b7abea81799747693590d"
+  },
+  {
+   "name": "Broccoli_Body_Refl.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Broccoli/Broccoli_Body_Refl.jpg",
+   "format": "jpg",
+   "sizeBytes": 1181777,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "7365387573a309cf658eaf9cf1379191754ff49d7ac0a071f4b158da5a391068"
+  },
+  {
+   "name": "cabbage_Normal_bump.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Cabbage/cabbage_Normal_bump.jpg",
+   "format": "jpg",
+   "sizeBytes": 467434,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "1a1ad1e86e1a9c90982266f05c36accdfc8da8992d9a4dcedf87bf2dea047fc7"
+  },
+  {
+   "name": "cabbage_diff.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Cabbage/cabbage_diff.jpg",
+   "format": "jpg",
+   "sizeBytes": 1505848,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "4b049d0a7a0a162adb660791af183a5d9c9e0b9c1cafcbdba5a1325193a88311"
+  },
+  {
+   "name": "cabbage_refl.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Cabbage/cabbage_refl.jpg",
+   "format": "jpg",
+   "sizeBytes": 1251531,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "a695912b626a460065dc3ba7a87bcf1f4f27290670a98883aaf7fec0b3a0315a"
+  },
+  {
+   "name": "Carrot.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Carrot/Carrot.jpg",
+   "format": "jpg",
+   "sizeBytes": 1303416,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "a3e1e25bda488e2e76aef9f5dbfd8d9354c76074134d1e29f9720ec33280a945"
+  },
+  {
+   "name": "Carrot_gloss.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Carrot/Carrot_gloss.jpg",
+   "format": "jpg",
+   "sizeBytes": 1029729,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "3e8da75841d05e085c28d20aa4abe296e85678a0cd0f412688135bba257d96d3"
+  },
+  {
+   "name": "Cucumber_Inner.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Cucumber/Cucumber_Inner.png",
+   "format": "png",
+   "sizeBytes": 286928,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "df2f257b8a35ef763e63d2dc243c982bc8bfdd71cc301f31c19b64c178c36ccc"
+  },
+  {
+   "name": "Cucumber_diff.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Cucumber/Cucumber_diff.jpg",
+   "format": "jpg",
+   "sizeBytes": 1022296,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "596ca6a2ff68d6c2a7f4a412c76f1384081c77294e967601381ba8bcfb66c0e3"
+  },
+  {
+   "name": "Cucumber_glos.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Cucumber/Cucumber_glos.jpg",
+   "format": "jpg",
+   "sizeBytes": 525848,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "74fb87d9599051d36111094d73f687f38f286dcaf7dec1f5bb00d03ec7f46c03"
+  },
+  {
+   "name": "fried_cucurbita_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Cucurbita/fried_cucurbita_texture.png",
+   "format": "png",
+   "sizeBytes": 26671,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "a4ed6920d1dc27a9976ee07603677b5b4c2278e9abeb1f2e3e49f7725838ea03"
+  },
+  {
+   "name": "fried_cucurbita_texture_2.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Cucurbita/fried_cucurbita_texture_2.png",
+   "format": "png",
+   "sizeBytes": 170948,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "ac63379c53b75cb5efdae53f4ac3374c83c2ce07b88685a5ce20da726603044e"
+  },
+  {
+   "name": "egg_texture.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Egg/egg_texture.jpg",
+   "format": "jpg",
+   "sizeBytes": 19537,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "b013adcafa7aaedcc5859dfdaabf1b9075c5542149de60183f62eae00026c1d7"
+  },
+  {
+   "name": "fried_eggplant_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Eggplant/fried_eggplant_texture.png",
+   "format": "png",
+   "sizeBytes": 1319656,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "4274bf201aac494f95b766e15204f983d354c5885fe1230908ff3e036675977f"
+  },
+  {
+   "name": "fried_eggplant_texture_2.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Eggplant/fried_eggplant_texture_2.png",
+   "format": "png",
+   "sizeBytes": 47400,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "9cdc7e78ba730baf69951c24de5edd5921a43e89f9b00be5e96b7792af8533d8"
+  },
+  {
+   "name": "LEMON.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Lemon/LEMON.jpg",
+   "format": "jpg",
+   "sizeBytes": 2197378,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "0e5c7d4a64cb18a22e5c23b8ea2f8565b06d36d68ed46947116398f6081789be"
+  },
+  {
+   "name": "LEMON_leaf.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Lemon/LEMON_leaf.jpg",
+   "format": "jpg",
+   "sizeBytes": 375615,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "4cbd198d7522f62bed56aaf1eadb518413050b3b04b86980f50c66abdd703878"
+  },
+  {
+   "name": "LEMON_slice.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Lemon/LEMON_slice.jpg",
+   "format": "jpg",
+   "sizeBytes": 1190249,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "4cc119f661e3a016f8fc2840e6376b26b57563989347fa4e00f78d3f91684dac"
+  },
+  {
+   "name": "Lemon_02_BUMP.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Lemon/Lemon_02_BUMP.png",
+   "format": "png",
+   "sizeBytes": 1085659,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "fb71410091cf3896e1777e41cdb1cbe2c4bc8ff4fbfe5d1b7d71d755b0c23053"
+  },
+  {
+   "name": "Lemon_02_DIFF.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Lemon/Lemon_02_DIFF.png",
+   "format": "png",
+   "sizeBytes": 2128986,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "d7a05faa9da5f1af738762d207862e9131de9bb426a0fbbb8edf27169102652f"
+  },
+  {
+   "name": "Lemon_02_RUFF.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Lemon/Lemon_02_RUFF.png",
+   "format": "png",
+   "sizeBytes": 545489,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "9e217932655d8688fea077a576716665fdf28a38e052a9835219f856fdd4cc43"
+  },
+  {
+   "name": "Lemon_02_SPEC.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Lemon/Lemon_02_SPEC.png",
+   "format": "png",
+   "sizeBytes": 1044116,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "caebd0fb10dc522d170ebe4d7b52eb596fada5284a7ec685eae16dc2f269285d"
+  },
+  {
+   "name": "lemon_slice_dry.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Lemon/lemon_slice_dry.png",
+   "format": "png",
+   "sizeBytes": 2652525,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "8dc9c3afd67a8851f1286cefb911f28bb64b30a1fc5f0ee3c61a35d328610d52"
+  },
+  {
+   "name": "Mushroom_Body.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Mushroom/Mushroom_Body.jpg",
+   "format": "jpg",
+   "sizeBytes": 169367,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "d9e48ffc3ae03136197c65b723c905150d8af4f08c0f1b4656d8253bb40da7b0"
+  },
+  {
+   "name": "fried_mushroom_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Mushroom/fried_mushroom_texture.png",
+   "format": "png",
+   "sizeBytes": 279457,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "e67e4ef48f5d8048c638b9703bf5178bdc5e497e6803c1fb05c722700e0627a4"
+  },
+  {
+   "name": "fried_mushroom_texture_2.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Mushroom/fried_mushroom_texture_2.png",
+   "format": "png",
+   "sizeBytes": 75032,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "5f604dfe54cc7ce6500eaf2a52b93194f20c35730987b78dffb7718bd0b2743f"
+  },
+  {
+   "name": "Onion_Body.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Onion/Onion_Body.jpg",
+   "format": "jpg",
+   "sizeBytes": 1364316,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "b0dc6ab0432dcb53a534b9edf440eeb898dfcf51797775b6c165ed091f8718bb"
+  },
+  {
+   "name": "Onion_Body_Det.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Onion/Onion_Body_Det.jpg",
+   "format": "jpg",
+   "sizeBytes": 1006780,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "ebb94599d0ed6fb41113dda8094501139351ee31a7d03ba9cd5305e305055fda"
+  },
+  {
+   "name": "fried_onion_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Onion/fried_onion_texture.png",
+   "format": "png",
+   "sizeBytes": 15400,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "88e85ef6850af94ce30ae4cb1c26f20e9932936ee4a14ccd52770b7f3c3cfc84"
+  },
+  {
+   "name": "fried_onion_texture_2.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Onion/fried_onion_texture_2.png",
+   "format": "png",
+   "sizeBytes": 15793,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "bf91e15b7e3640e691249699af9e18095a92f65840a051e9bebddff7113548ed"
+  },
+  {
+   "name": "Parsley_diff.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Parsley/Parsley_diff.jpg",
+   "format": "jpg",
+   "sizeBytes": 1452960,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "e904b9e412cf8c4ede0b5370c1a30aea9021b5130323dc484820529161a01587"
+  },
+  {
+   "name": "Parsley_opas.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Parsley/Parsley_opas.jpg",
+   "format": "jpg",
+   "sizeBytes": 262131,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "c125f1c1d8ecf851666e7fdeaf76b706dd0c940ad1db7438b1d921d3db3df6b4"
+  },
+  {
+   "name": "Parsley_refl.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Parsley/Parsley_refl.jpg",
+   "format": "jpg",
+   "sizeBytes": 1060938,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "c67e82ddf7dd27725bc4d77107484e2ac570ade7188b3aac2a40ffe8601e6ff5"
+  },
+  {
+   "name": "Map__54_Speckle.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Potato/OldPotato/Map__54_Speckle.png",
+   "format": "png",
+   "sizeBytes": 318094,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "8ba8f2743b40bc55c7cad2a58c7ab1e1c3670b5870f4300f285e44a16d09bd86"
+  },
+  {
+   "name": "Potato_diff.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Potato/Potato_diff.jpg",
+   "format": "jpg",
+   "sizeBytes": 1446206,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "f481bfac9d673bccdf69e0334981a12275c0bfb6abb7c6997e85cb50fbd6de6a"
+  },
+  {
+   "name": "Potato_gloss.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Potato/Potato_gloss.jpg",
+   "format": "jpg",
+   "sizeBytes": 1316804,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "f1d9ad237f99e3b3465789fdab8c19a4ad7f17362da01508a2c29f0b373a7452"
+  },
+  {
+   "name": "fried_potato_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Potato/fried_potato_texture.png",
+   "format": "png",
+   "sizeBytes": 4206,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "fa2fb5688fde47c3154eb4ab34b809dc7b762afda1d3fcc21520bb7219ba9a34"
+  },
+  {
+   "name": "fried_potato_texture_2.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Potato/fried_potato_texture_2.png",
+   "format": "png",
+   "sizeBytes": 1404914,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "248f2239d2c0c328ab61f3729cb3c0579dd4af169959502dc3a56406af5ef29f"
+  },
+  {
+   "name": "fried_potato_texture_3.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Potato/fried_potato_texture_3.png",
+   "format": "png",
+   "sizeBytes": 195176,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "6575ff03096fd728ab06cdbc261c3527eb9800ea0bcd7ffdd17a6f05975cdfd6"
+  },
+  {
+   "name": "fried_potato_texture_4.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Potato/fried_potato_texture_4.png",
+   "format": "png",
+   "sizeBytes": 261581,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "4476536c01b8004588b563a4028a71b27372963f7e9a02fdfcf563ec043fe027"
+  },
+  {
+   "name": "fried_red_pepper_texture.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Red Pepper/fried_red_pepper_texture.png",
+   "format": "png",
+   "sizeBytes": 62384,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "d6a7bbc0d241d1183105ba3c5b6f5b038af5b914b4f41deed563309b1fb68b16"
+  },
+  {
+   "name": "fried_red_pepper_texture_2.png",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Red Pepper/fried_red_pepper_texture_2.png",
+   "format": "png",
+   "sizeBytes": 9915,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "ffbc34bb01641130c2fc6e19605d94bb9c6af81800f7a1ec31201489d53098e6"
+  },
+  {
+   "name": "SpringOnion_Body.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/SpringOnion/SpringOnion_Body.jpg",
+   "format": "jpg",
+   "sizeBytes": 303703,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "0997231c849698350d2023d5ccb1a1c0b25af0498511182850858f3a86650653"
+  },
+  {
+   "name": "SpringOnion_Body_Det.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/SpringOnion/SpringOnion_Body_Det.jpg",
+   "format": "jpg",
+   "sizeBytes": 243805,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "28fe3ba527dfb695080e8c9bb936db646ee54b74d452c43dfc0d043f4a73b3b6"
+  },
+  {
+   "name": "Tomato_Dirt.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Tomato/Tomato_Dirt.jpg",
+   "format": "jpg",
+   "sizeBytes": 21399,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "37a61f4064ef1ab4fe54e4cd0ed1c1df10efaf97c0958bec7a89e9eb7ec8834c"
+  },
+  {
+   "name": "Tomato_Inner.JPG",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Tomato/Tomato_Inner.JPG",
+   "format": "jpg",
+   "sizeBytes": 68880,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "37e6b23fa95e24e541782cee535dd8b6970d3402c072667719bc3db624430af1"
+  },
+  {
+   "name": "Tomato_Outer.jpg",
+   "path": "VRChef_modelos/Textures/Food/Vegetables/Tomato/Tomato_Outer.jpg",
+   "format": "jpg",
+   "sizeBytes": 321728,
+   "function": "alimento/ingrediente",
+   "category": "alimento",
+   "hash": "1efe2b3271b7aeadbea7c1ed568ab3624e9b254888cc8d1683e1e91722013ab8"
+  },
+  {
+   "name": "ChoppingBoard_Diffuse.jpg",
+   "path": "VRChef_modelos/Textures/KitchenEquipment/ChoppingBoard/ChoppingBoard_Diffuse.jpg",
+   "format": "jpg",
+   "sizeBytes": 348762,
+   "function": "equipo",
+   "category": "recipiente/utensilio",
+   "hash": "e264f3bd775db1a1e38b871e31150784d5875023df230bdb68c97272d74e2e27"
+  },
+  {
+   "name": "knife_1_Diffuse.png",
+   "path": "VRChef_modelos/Textures/KitchenEquipment/HandTools/Knife_1/knife_1_Diffuse.png",
+   "format": "png",
+   "sizeBytes": 433801,
+   "function": "equipo",
+   "category": "recipiente/utensilio",
+   "hash": "5ef6623c5fc93db58e430a77e85b6e4d85759ee125bbcded2f6205f25e089bbe"
+  },
+  {
+   "name": "knife_1_Normal.png",
+   "path": "VRChef_modelos/Textures/KitchenEquipment/HandTools/Knife_1/knife_1_Normal.png",
+   "format": "png",
+   "sizeBytes": 3000522,
+   "function": "equipo",
+   "category": "recipiente/utensilio",
+   "hash": "178c260a8fab24a42a4444ce52aab0753d3f359fc546f5f881a6d47a2a7eb79f"
+  },
+  {
+   "name": "knife_1_Reflect.png",
+   "path": "VRChef_modelos/Textures/KitchenEquipment/HandTools/Knife_1/knife_1_Reflect.png",
+   "format": "png",
+   "sizeBytes": 944290,
+   "function": "equipo",
+   "category": "recipiente/utensilio",
+   "hash": "3238319a71b56a1c0e36ce65d9e8a5f7579bb18d21977b632e72ca65ac77404b"
+  },
+  {
+   "name": "Aluminum_Scuffed_Diffuse.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Aluminum_Scuffed/Aluminum_Scuffed_Diffuse.png",
+   "format": "png",
+   "sizeBytes": 19628,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "8007049bc99fedbc3f3b732c505b47ebb94358fdf368adeefbe2ee5a826cb211"
+  },
+  {
+   "name": "Aluminum_Scuffed_Metallic.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Aluminum_Scuffed/Aluminum_Scuffed_Metallic.png",
+   "format": "png",
+   "sizeBytes": 2974947,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "1e2ae159fc4dd01c6e56591649c349b410b1675aea88fc1c6976e045f81f20a0"
+  },
+  {
+   "name": "Aluminum_Scuffed_Normal.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Aluminum_Scuffed/Aluminum_Scuffed_Normal.png",
+   "format": "png",
+   "sizeBytes": 25602,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "8f1f211d3f603e0cbf6c2d72cf4dd5aa0d30de33cd011d03d11c0788992b3d0f"
+  },
+  {
+   "name": "Iron_Scuffed_Diffuse.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Iron_Scuffed/Iron_Scuffed_Diffuse.png",
+   "format": "png",
+   "sizeBytes": 19629,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "d10d3f3667099909184086588c6bf92b26fae83d6eb70e689f37941cf5ef0177"
+  },
+  {
+   "name": "Iron_Scuffed_Metallic.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Iron_Scuffed/Iron_Scuffed_Metallic.png",
+   "format": "png",
+   "sizeBytes": 2806297,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "278d9311c5a3cdfa47ad75d64d2f61cd770a28db91369224704890125bd63714"
+  },
+  {
+   "name": "Iron_Scuffed_Normal.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Iron_Scuffed/Iron_Scuffed_Normal.png",
+   "format": "png",
+   "sizeBytes": 25384,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "15a575005bc4ace65c2f1d1110b0fbd3af4d840f45a2546376af37b5484ce391"
+  },
+  {
+   "name": "POWDER.JPG",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/POWDER.JPG",
+   "format": "jpg",
+   "sizeBytes": 126993,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "8bca4aa29eaaa223c4e6a97825a333ea0fab1aaf5fb4d346eec9dbf514eb9b76"
+  },
+  {
+   "name": "bar.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/bar.jpg",
+   "format": "jpg",
+   "sizeBytes": 87801,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "311ab8492866ecd4a6979973e326297e2ec5bf453c74176874a7ba92d768ee4b"
+  },
+  {
+   "name": "brushedmetal.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/brushedmetal.jpg",
+   "format": "jpg",
+   "sizeBytes": 68819,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "a817fd7b2efe616896b3d55155ccfedcee981ad33fbdf1893431a5d78b5ad2c6"
+  },
+  {
+   "name": "display.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/display.jpg",
+   "format": "jpg",
+   "sizeBytes": 21912,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "2290ee13f8c64dde0b65965696c5f2b6c917f42b4a010a27734a88a82d438f31"
+  },
+  {
+   "name": "dotmesh.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/dotmesh.jpg",
+   "format": "jpg",
+   "sizeBytes": 4611594,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "10707b8a86ee428ff8ee542984208ae473bbd57c6ec8d2b816ee94b77d008fa7"
+  },
+  {
+   "name": "gas-o.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/gas-o.jpg",
+   "format": "jpg",
+   "sizeBytes": 81956,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "553405bd072e596dc6bf69b3a2e834caaf463d74752a8c905bfa626e1a81be73"
+  },
+  {
+   "name": "gas.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/gas.jpg",
+   "format": "jpg",
+   "sizeBytes": 25021,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "d0a0789dfab40aee2c9068980fad1dc1a2dae5d1d5acd596292bfeeb32dcf636"
+  },
+  {
+   "name": "maps.506.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/maps.506.jpg",
+   "format": "jpg",
+   "sizeBytes": 1092833,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "cf497e4a35d3441b9b6294c789cb7452d9bdaef3529d3508949b2274991f8eb8"
+  },
+  {
+   "name": "metal_scratch.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/metal_scratch.jpg",
+   "format": "jpg",
+   "sizeBytes": 282527,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "95be6a75a61e7448c447d2f0d47d1bbb4901b9ba032af9874660a0c0ad107ced"
+  },
+  {
+   "name": "panel.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/panel.jpg",
+   "format": "jpg",
+   "sizeBytes": 135398,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "cd8b944f8ec001528f54d897bb7321100b01c42c3a19b6017f7509cc495eddd4"
+  },
+  {
+   "name": "radial.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/radial.jpg",
+   "format": "jpg",
+   "sizeBytes": 1999063,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "b34e07cd6a59335ecb834ca9270062cb603f6c83271fc5bb87bb308284059260"
+  },
+  {
+   "name": "radial_norm.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/radial_norm.jpg",
+   "format": "jpg",
+   "sizeBytes": 4350314,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "7dd205ac2003143980eb0f6953f6cb748e7c29d7a8a9d4d9954c5d0420f3fbdb"
+  },
+  {
+   "name": "t.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/t.jpg",
+   "format": "jpg",
+   "sizeBytes": 1228385,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "8e385fa3bbae9fc7e7ea22f37e74a6961b4d839ec006aae521bfcfae109b4642"
+  },
+  {
+   "name": "t_bump.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/t_bump.jpg",
+   "format": "jpg",
+   "sizeBytes": 1152293,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "3ad7bb3d40883206ec9929f71b41d87cc18e30db1d708774eb4f40c03594246b"
+  },
+  {
+   "name": "v.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/v.jpg",
+   "format": "jpg",
+   "sizeBytes": 99287,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "09939e8bc0d0d8c30fda665a50980f82e9e040ac78f5610aeed689cd94c42913"
+  },
+  {
+   "name": "v_bump.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/v_bump.jpg",
+   "format": "jpg",
+   "sizeBytes": 60301,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "ae5b4793a17e8c915773727bed2ab02cd0c80579a7430bb041f1d2bde77b2c7b"
+  },
+  {
+   "name": "v_mask.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/v_mask.jpg",
+   "format": "jpg",
+   "sizeBytes": 42720,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "c99d9aeba417867926703d2ec06c1a542909bb40fffc6647fa63685e437f7e3d"
+  },
+  {
+   "name": "wall_003 seamless sepia offset.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/wall_003 seamless sepia offset.jpg",
+   "format": "jpg",
+   "sizeBytes": 5348786,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "000dbd1c394abf44ec9c926f599ba557aec9e26493c4ef9d5f7d65212bd25618"
+  },
+  {
+   "name": "wall_003 seamless sepia.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/wall_003 seamless sepia.jpg",
+   "format": "jpg",
+   "sizeBytes": 5289934,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "a4d603b7390475fa1d88c6cdc18bed4ec7b101795c9acd2bdf057580716e9380"
+  },
+  {
+   "name": "wall_003 seamless white.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/wall_003 seamless white.jpg",
+   "format": "jpg",
+   "sizeBytes": 2842287,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "ea713701fcb2c77ca126272269e2d4471f850fea5aa29047d9b3dcd763dd083c"
+  },
+  {
+   "name": "winterhalter.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/winterhalter.jpg",
+   "format": "jpg",
+   "sizeBytes": 69749,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "3d106c6ca0145410f91b9ce01c08030aa7a3e9342eeffbeea83bf24a4fa997f3"
+  },
+  {
+   "name": "wrought_iron.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Other/wrought_iron.jpg",
+   "format": "jpg",
+   "sizeBytes": 1293858,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "478b5ca26ab7daf59d8392bbe2322e79a2457fc1971bcef47180a80b5ba22c7d"
+  },
+  {
+   "name": "Minus.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Oven_Buttons/Minus.png",
+   "format": "png",
+   "sizeBytes": 1316,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "2520a194fed6547484aca66dd6bd511f051fc14b9515e99191a855af14dc94d7"
+  },
+  {
+   "name": "OnOff.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Oven_Buttons/OnOff.png",
+   "format": "png",
+   "sizeBytes": 8600,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "6ae66ce4ec37e8bb36828d24445d2c643b02633f37c3ef77a48c2f190dc70b0d"
+  },
+  {
+   "name": "Plus.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Oven_Buttons/Plus.png",
+   "format": "png",
+   "sizeBytes": 7358,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "94b2b332a4c4dd8b2ffd6818927e97cac214ea8af064c8fec46d6e50d918773c"
+  },
+  {
+   "name": "11010_Normal.jpg",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Plastic/11010_Normal.jpg",
+   "format": "jpg",
+   "sizeBytes": 1691648,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "d078ceed43e3afc74228ab8e2a4b4878af0303d516706ef730894d00e60c1e16"
+  },
+  {
+   "name": "Rusted_Iron_Diffuse.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Rusted_Iron/Rusted_Iron_Diffuse.png",
+   "format": "png",
+   "sizeBytes": 8132256,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "4f2eba252917bc6f0fd01846b4ff9c802e39bf21f045b7d1605921ac4a6fe39c"
+  },
+  {
+   "name": "Rusted_Iron_Metallic.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Rusted_Iron/Rusted_Iron_Metallic.png",
+   "format": "png",
+   "sizeBytes": 7167625,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "28312b1f25a38622127a607cfdb5639a3e8db6aa664215afbc87291ff5636343"
+  },
+  {
+   "name": "Rusted_Iron_Normal.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Rusted_Iron/Rusted_Iron_Normal.png",
+   "format": "png",
+   "sizeBytes": 5198501,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "d98bbf487b7319ba90eed129ade02062707c07d4b7924cfaf67fb1ac7376a41f"
+  },
+  {
+   "name": "Streaked_Metal_Diffuse.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Streaked_Metal/Streaked_Metal_Diffuse.png",
+   "format": "png",
+   "sizeBytes": 1335112,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "4c21a445fb923a8c0afe279135470f1da0290dd43b4f0ebcdcad458374fcb536"
+  },
+  {
+   "name": "Streaked_Metal_Metallic.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Streaked_Metal/Streaked_Metal_Metallic.png",
+   "format": "png",
+   "sizeBytes": 3663615,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "322abcdf82e0f39bdbdb4eb9ffff6d9fa3967258f5f06d6e6d4f57641ba22740"
+  },
+  {
+   "name": "Streaked_Metal_Normal.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Streaked_Metal/Streaked_Metal_Normal.png",
+   "format": "png",
+   "sizeBytes": 1335112,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "4c21a445fb923a8c0afe279135470f1da0290dd43b4f0ebcdcad458374fcb536"
+  },
+  {
+   "name": "Titanium_Scuffed.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Titanium_Scuffed/Titanium_Scuffed.png",
+   "format": "png",
+   "sizeBytes": 2767686,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "98cfc157303032654786a09e214c1c784807b0fa37d19a30e244a3c270a0ab12"
+  },
+  {
+   "name": "Titanium_Scuffed_Diffuse.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Titanium_Scuffed/Titanium_Scuffed_Diffuse.png",
+   "format": "png",
+   "sizeBytes": 37948,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "66e5e4b34d2d5433e63c06a48b66192bc657e3e2100770fe240f5f438b8cd2bc"
+  },
+  {
+   "name": "Titanium_Scuffed_Normal.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Titanium_Scuffed/Titanium_Scuffed_Normal.png",
+   "format": "png",
+   "sizeBytes": 25384,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "15a575005bc4ace65c2f1d1110b0fbd3af4d840f45a2546376af37b5484ce391"
+  },
+  {
+   "name": "wornpaintedwoodsiding-albedo.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Wood_Painted/wornpaintedwoodsiding-albedo.png",
+   "format": "png",
+   "sizeBytes": 4671341,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "35274fe5014e92c4d55ed06c7462246791146d64ca1c649069ed6e46c0e94607"
+  },
+  {
+   "name": "wornpaintedwoodsiding-ao.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Wood_Painted/wornpaintedwoodsiding-ao.png",
+   "format": "png",
+   "sizeBytes": 2377425,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "820ddb9c5d509a4ead335b3528a3e15f5e75cff0ea536331dae4dc70ccf84df3"
+  },
+  {
+   "name": "wornpaintedwoodsiding-metalness.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Wood_Painted/wornpaintedwoodsiding-metalness.png",
+   "format": "png",
+   "sizeBytes": 3098681,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "5909c3df8e38f5ac37c0993df7998df5e5d01f32915a68fdbb1d0bca457c58af"
+  },
+  {
+   "name": "wornpaintedwoodsiding-normal-unity.png",
+   "path": "VRChef_modelos/Textures/KitchenFurniture/Wood_Painted/wornpaintedwoodsiding-normal-unity.png",
+   "format": "png",
+   "sizeBytes": 7749464,
+   "function": "mobiliario",
+   "category": "entorno/fuente de calor",
+   "hash": "1d195ab44272e09a9e2513c958578ad530a056a677eda5eff94e8d43c84e8da5"
+  },
+  {
+   "name": "mixmaterial.jpg",
+   "path": "VRChef_modelos/Textures/mixmaterial.jpg",
+   "format": "jpg",
+   "sizeBytes": 4973,
+   "function": "otro",
+   "category": "otro",
+   "hash": "4582312a25cfafa54909308d45c041720ecbda3c5decf6df9db4cf850baa9549"
+  },
+  {
+   "name": "mixmaterial2.jpg",
+   "path": "VRChef_modelos/Textures/mixmaterial2.jpg",
+   "format": "jpg",
+   "sizeBytes": 28064,
+   "function": "otro",
+   "category": "otro",
+   "hash": "36590144ff63b1aa10cb8e11d8dcad6856865dda619567dd3f6401117700a25a"
+  },
+  {
+   "name": "water_reflection.png",
+   "path": "VRChef_modelos/Textures/water_reflection.png",
+   "format": "png",
+   "sizeBytes": 2974947,
+   "function": "otro",
+   "category": "otro",
+   "hash": "1e2ae159fc4dd01c6e56591649c349b410b1675aea88fc1c6976e045f81f20a0"
+  }
+ ]
+}

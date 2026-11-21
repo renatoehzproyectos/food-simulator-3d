@@ -1,0 +1,23 @@
+# ASSUMPTIONS (parámetros sin fuente verificada)
+Se resuelven en Fases 6–8 con búsqueda bibliográfica; hasta entonces están marcados `ASSUMPTION` en el código.
+
+| Parámetro | Valor | Dónde | Motivo / rango de la spec |
+|---|---|---|---|
+| D₀, Eₐ difusividad de humedad en grano | 8.7e-7 m²/s, 26 kJ/mol → D(100 °C)=2e-10 m²/s | `physics/moisture.js` | Spec 10.4: 1e-11–1e-9 m²/s, creciente con T. **Pendiente de calibrar**: con estos valores R²/D ≈ 2 h para R=1.2 mm, quizá lento frente a una cocción real |
+| M de saturación del grano | 1.8 kg/kg b.s. (constante) | `physics/moisture.js` | Spec: 1.5–2.5, verificar; en realidad depende de T |
+| ρ sólido seco del grano | 1450 kg/m³ | `physics/moisture.js` | Spec: grano 1400–1500 |
+| cp del agua | 4180 J/kgK | `physics/evaporation.js` | Spec 10.4 (valor de tabla estándar) |
+| h_m (transferencia de masa superficial) | lo fija quien llama | `surfaceEvaporation` | Sin valor por defecto a propósito |
+| k efectivo del agua en el test de ebullición | 20 W/mK | `tests/moisture.test.js` | Solo para el test (mezcla convectiva) |
+Fuente verificada: Antoine del agua (constantes NIST, 1–100 °C), validado en test contra 101.3 kPa a 100 °C.
+
+## Fases 6–7
+| Parámetro | Valor | Dónde | Estado |
+|---|---|---|---|
+| k_ref gelatinización | 0.03 1/s a 74.2 °C | `chemistry/starch.js` | **Calibración**: reproduce pico DSC ≈74 °C a 10 K/min (Kissinger). Ea y T_break sí tienen fuente (ver MODELS.md) |
+| f(M) del almidón | rampa M0=0.25 → M1=0.8 kg/kg b.s. | `starch.js` | Forma cualitativa; valores sin verificar |
+| Proteínas: k_ref, Ea=300 kJ/mol, pH_slope | 1e-3 1/s a 75 °C, … | `proteins.js` | Placeholders de orden de magnitud |
+| Maillard: k_ref, Ea=110 kJ/mol, ancho de g(aw)=0.2, órdenes 1 | … | `maillard.js` | ASSUMPTION; solo el máximo de g(aw) a ≈0.6–0.7 es conocimiento clásico |
+| Caramelización: k(160 °C)=1e-3 1/s, Ea=200 kJ/mol | … | `caramelization.js` | ASSUMPTION; umbral ~160 °C de la spec |
+| Oxidación: k_ref, Ea=60 kJ/mol, m=1 | … | `oxidation.js` | ASSUMPTION |
+| Textura: H_raw=100 N, H_gel=20 N, p=2, λ=0.6, H_burn=40 N, ventana M 0.5–1.2 | … | `food/texture.js` | ASSUMPTION; calibrar con texturometría (Fase 14) |
