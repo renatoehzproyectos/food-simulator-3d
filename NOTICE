@@ -1,4 +1,10 @@
-Este proyecto incluye modelos, texturas y audio derivados de VRChef
+Este proyecto incluye modelos 3D y audio derivados de VRChef
 (https://github.com/dyanikoglu/VRChef), licenciado bajo Apache License 2.0.
-Cambios: conversión de FBX a GLB y ajuste de escala. Copiar aquí el texto
-completo de la licencia como LICENSE-VRChef antes de publicar.
+Texto completo: LICENSE-VRChef (copia de https://www.apache.org/licenses/LICENSE-2.0.txt).
+
+Archivos usados (public/assets): models/{Pot_1,Spoon,hotplate_oven,bottle,jar}.glb sin modificar;
+audio/boiling_water.mp3 y audio/frying_sound.mp3 convertidos a mono 22.05 kHz mp3 a 48 kbps desde los originales
+(boiling_water.wav y frying_sound.mp3). Escalado y orientación se aplican en tiempo de ejecución (src/engine3d/manifest.js).
+No se incluyen recursos de terceros de Unity Standard Assets.
+
+También incluye @tangent.to/ode (MIT) en vendor/ode.

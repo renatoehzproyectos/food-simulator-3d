@@ -1,11 +1,69 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Food Simulator 3D</title>
-<style>body{font-family:system-ui,sans-serif;margin:0;padding:1.2rem;background:#14110f;color:#eee}pre{white-space:pre-wrap}</style>
-</head><body>
-<h1>Food Simulator 3D</h1>
-<p>Fase 3: core + motor numérico. Prueba del motor (decaimiento y evento):</p>
-<pre id="out">cargando…</pre>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Food Simulator 3D — Arroz</title>
+<style>
+:root{--bg:#14110f;--fg:#f1ebe3;--ac:#e8923a;--pn:rgba(20,17,15,.82)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:14px system-ui,sans-serif;overflow:hidden;touch-action:none}
+canvas#c{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none}
+.panel{position:fixed;left:0;right:0;padding:8px 10px;background:var(--pn);backdrop-filter:blur(6px)}
+#top{top:0;padding-top:max(8px,env(safe-area-inset-top));display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;font-size:12.5px}
+#bottom{bottom:0;padding-bottom:max(8px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:6px}
+.row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+button{background:#2b241f;color:var(--fg);border:1px solid #4a3d33;border-radius:9px;padding:9px 11px;font:inherit;min-height:40px}
+button.on{background:var(--ac);color:#1a1209;border-color:var(--ac)}
+button:focus-visible,input:focus-visible{outline:2px solid #fff;outline-offset:2px}
+input[type=range]{flex:1;min-width:120px;accent-color:var(--ac)}
+#state{font-weight:700} .q{color:#ff6b4a} .ok{color:#7be07b} .warn{color:#ffd24a}
+#why{opacity:.8;font-size:12px}
+#toast{position:fixed;left:50%;top:70px;transform:translateX(-50%);background:var(--ac);color:#1a1209;padding:8px 14px;border-radius:20px;font-weight:600;opacity:0;transition:opacity .3s;pointer-events:none;max-width:90vw;text-align:center}
+#help{position:fixed;inset:0;display:none;background:rgba(0,0,0,.8);padding:24px;overflow:auto} #help.show{display:block}
+#start{position:fixed;inset:0;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;background:rgba(20,17,15,.92);text-align:center;padding:24px}
+#start h1{margin:0;font-size:26px} #start p{max-width:440px;opacity:.85;line-height:1.4;margin:0}
+#start button{font-size:17px;padding:14px 26px;background:var(--ac);color:#1a1209;border:0;font-weight:700}
+.dim{opacity:.7}
+</style>
+</head>
+<body>
+<canvas id="c" aria-label="Escena 3D de cocina con una olla de arroz"></canvas>
+<div id="top" class="panel" role="status" aria-live="polite">
+  <span>⏱ <b id="t">00:00</b> · <span id="fps" class="dim"></span></span>
+  <span>Agua <b id="Tw">–</b> · Fondo <b id="Tb">–</b></span>
+  <span>Libre <b id="fw">0</b> g · M <b id="M">–</b> · α <b id="a">–</b></span>
+  <span id="state">Olla vacía</span>
+  <span id="why"></span>
+</div>
+<div id="toast" role="alert"></div>
+<div id="bottom" class="panel">
+  <div class="row">
+    <button id="bRice" aria-label="Añadir 100 gramos de arroz (tecla R)">+100 g arroz</button>
+    <button id="bWater" aria-label="Verter 100 mililitros de agua (tecla W)">+100 mL agua</button>
+    <button id="bFire" aria-label="Poner o quitar la olla del fuego (tecla F)">🔥 Fuego</button>
+    <button id="bLid" class="on" aria-label="Tapa (tecla L)">Tapa</button>
+    <button id="bStir" aria-label="Agitar (tecla S)">🥄 Agitar</button>
+  </div>
+  <div class="row"><span class="dim">Calor</span><input id="power" type="range" min="0" max="2000" step="250" value="500" aria-label="Potencia del quemador"><b id="pw">500 W</b></div>
+  <div class="row">
+    <button data-ts="1">1×</button><button data-ts="10">10×</button><button data-ts="60" class="on">60×</button><button data-ts="600">600×</button>
+    <button id="bPause" aria-label="Pausa (espacio)">⏸</button><button id="bTherm" aria-label="Vista térmica (tecla T)">🌡</button><button id="bView">🔍</button>
+    <button id="bSnd">🔊</button><button id="bReset">↺</button><button id="bHelp">?</button>
+  </div>
+</div>
+<div id="help" role="dialog" aria-label="Ayuda">
+  <h2>Cómo jugar</h2>
+  <p>Arrastra el frasco de arroz o la botella sobre la olla para añadir ingredientes (se inclinan y vierten). Arrastra la olla al fuego y ajusta el calor. Agita con la cuchara. Los botones hacen lo mismo si prefieres tocar.</p>
+  <p><b>Teclado:</b> R +100 g arroz · W +100 mL agua · F fuego · ↑/↓ potencia · L tapa · S agitar · T vista térmica · Espacio pausa · 1–4 velocidad · H ayuda.</p>
+  <p class="dim">Los valores (tiempos de cocción, humedad, gelatinización) salen de un modelo físico; los parámetros sin fuente están marcados como supuestos en docs/ASSUMPTIONS.md. Referencia: ~14 min a 100 °C con 300 g de agua por 200 g de arroz.</p>
+  <button id="hClose">Cerrar</button>
+</div>
+<div id="start">
+  <h1>Food Simulator 3D</h1>
+  <p>Cocina arroz con una simulación física: calor, absorción de agua, gelatinización, evaporación y quemado. Prueba pocas o muchas aguas, fuego alto o bajo.</p>
+  <button id="go">Empezar</button><p class="dim" id="load">Cargando modelos…</p>
+</div>
 <script type="module" src="/src/main.js"></script>
-</body></html>
+</body>
+</html>

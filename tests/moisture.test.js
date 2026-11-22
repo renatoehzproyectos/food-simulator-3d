@@ -19,9 +19,9 @@ describe('Fick en esfera vs serie analítica', () => {
   });
   it('límite estacionario: M → M_eq', () => {
     const g = createGrain({ radius_m: 1e-3, M0_db: 0.1 }); for (let i = 0; i < 400; i++) stepGrain(g, { T_K: 373.15, wet: true, dt_s: 100 });
-    expect(Math.max(...g.M)).toBeLessThanOrEqual(1.8 + 1e-9); expect(meanMoisture_db(g)).toBeCloseTo(1.8, 3);
+    const Meq = P.Meq_db(373.15); expect(Math.max(...g.M)).toBeLessThanOrEqual(Meq + 1e-9); expect(meanMoisture_db(g)).toBeCloseTo(Meq, 3);
   });
-  it('D crece con T (Arrhenius)', () => { expect(arrhenius(P.D0_m2_s, P.Ea_J_mol, 373.15)).toBeCloseTo(2e-10, 11); expect(arrhenius(P.D0_m2_s, P.Ea_J_mol, 373.15)).toBeGreaterThan(arrhenius(P.D0_m2_s, P.Ea_J_mol, 293.15)); });
+  it('D crece con T (Arrhenius)', () => { expect(arrhenius(P.D0_m2_s, P.Ea_J_mol, 373.15)).toBeCloseTo(7.8e-11, 12); expect(arrhenius(P.D0_m2_s, P.Ea_J_mol, 373.15)).toBeGreaterThan(arrhenius(P.D0_m2_s, P.Ea_J_mol, 293.15)); });
 });
 
 describe('absorción y balance de masa', () => {

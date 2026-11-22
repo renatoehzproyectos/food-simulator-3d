@@ -21,3 +21,13 @@ Formas cinéticas estándar (Arrhenius, 1.er orden, g(aw) en campana para Mailla
 
 ## Textura (`food/texture.js`)
 hardness = g(M)·[H_gel + (H_raw−H_gel)(1−α)^p] + H_burn·B^q. Extiende la forma sugerida con el piso H_gel. Monótona (property tests). Parámetros ASSUMPTION.
+
+## Arroz (`food/rice.js`) — REQ-RICE-001 (Fase 8)
+Olla = columna 1D vertical (celda 0 = fondo de acero con inercia y pérdida por radiación; celdas 1..n = lecho/agua, Δz=2.5 mm). Cada celda con arroz lleva un grano esférico equivalente (radio R=3V/A del elipsoide, Knud-Thomsen) resuelto con Fick radial (8 capas), α por capa (almidón) y B (Maillard, dB/dt=k(1−B)², solución exacta). El agua cae por gravedad; evaporación superficial (hasta T_amb) y ebullición conservativa; k efectivo alto con agua líquida (mezcla/burbujeo) y bajo en seco: de ahí emerge el quemado.
+Balances: masa (agua libre + absorbida + vapor perdido + sólidos) ≤1e-9 y energía ≤1e-6 (medidos ~1e-13 / 1e-13) en toda la evolución.
+**Clasificador** (`food/classifier.js`): quemado > duro > sobrecocido/blando > cocido, por umbrales parametrizados (D20).
+**Escenarios:** S1 quemado, S2 cocido, S3 blando, S4 quemado, S5 duro. Márgenes ajustados en S3 (dureza 5.8 N vs umbral 6 N) y en M de S2 (1.59 en [1.2, 2.3]).
+**Límites conocidos:** lecho sin expansión (el hinchamiento solo se refleja en visuales), sin presión, sin lixiviación de amilosa, sin pérdida de humedad del grano en seco.
+
+## Capa 3D (Fases 9–12)
+`output/adapter.js` (mapeos puros snapshot→visual), `engine3d/` (escena, asset-manager con caché/refcount/respaldo, granos instanciados, líquido con burbujas/vapor, vista térmica por DataTexture, interacción por Pointer Events que SOLO emite comandos, audio por eventos). Assets VRChef: ver NOTICE y D24.

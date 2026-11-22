@@ -5,8 +5,10 @@ import { makeGrid, arrhenius, stepFick, moistureInventory } from './diffusion.js
 /** Parámetros de partida del arroz. ASSUMPTION: órdenes de magnitud de la spec 10.4 (D 1e-11–1e-9 m²/s creciente con T;
  *  saturación 1.5–2.5 kg/kg b.s.); sin fuente puntual todavía → ver docs/ASSUMPTIONS.md. D(373.15 K)=2e-10 m²/s. */
 export const RICE_GRAIN_DEFAULTS = {
-  D0_m2_s: 8.7e-7, Ea_J_mol: 26e3,       // ASSUMPTION
-  Meq_db: () => 1.8,                       // ASSUMPTION: M de saturación (kg/kg b.s.), constante
+  D0_m2_s: 3.4e-7, Ea_J_mol: 26e3,       // CALIBRADO: D(100 °C)=7.8e-11 m²/s hace que el arroz alcance "cocido" a ~14 min a 100 °C (tiempo óptimo típico 12–18 min); antes 8.7e-7 daba 5.5 min
+  // ASSUMPTION: M de equilibrio en contacto con agua líquida, creciente con T: 0.45 a 20 °C (remojo, orden de magnitud) → 2.5 a 100 °C
+  // (extremo alto del rango 1.5–2.5 de la spec; a ~100 °C y mucho tiempo el grano se desintegra y absorbe más). Constante fuera de [0,100] °C.
+  Meq_db: (T_K) => 0.45 + (Math.min(373.15, Math.max(273.15, T_K)) - 293.15) / 80 * 2.05,
   rho_dry_kg_m3: 1450,                     // ASSUMPTION: densidad del sólido seco del grano (spec: grano ~1400–1500)
 };
 

@@ -19,6 +19,7 @@
     "vitest": "^2.1.0"
   },
   "dependencies": {
-    "@tangent.to/lina": "^0.1.4"
+    "@tangent.to/lina": "^0.1.4",
+    "three": "^0.170.0"
   }
 }

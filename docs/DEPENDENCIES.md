@@ -25,3 +25,6 @@ Cadena de dependencias pesada (mathjs, stdlib) para móvil. No entra al bundle b
 
 ## Food-Chemistry-Digital-Lab (referencia)
 `"license": "UNLICENSED"` y sin archivo LICENSE: todos los derechos reservados. Se puede leer para orientarse (fórmulas, bibliografía) y reimplementar ideas propias citando la fuente científica original, **no** el repo. No usar sus GLB/código/datos.
+
+## three (runtime, Fase 9)
+`three@0.170.0` (MIT). Solo en `src/engine3d` y `src/main.js`; GLTFLoader y OrbitControls se cargan con import dinámico (chunks aparte). Bundle total ≈ 160 KB gzip + 2.1 MB de assets.

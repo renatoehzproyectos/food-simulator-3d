@@ -21,3 +21,16 @@ Fuente verificada: Antoine del agua (constantes NIST, 1–100 °C), validado en 
 | Caramelización: k(160 °C)=1e-3 1/s, Ea=200 kJ/mol | … | `caramelization.js` | ASSUMPTION; umbral ~160 °C de la spec |
 | Oxidación: k_ref, Ea=60 kJ/mol, m=1 | … | `oxidation.js` | ASSUMPTION |
 | Textura: H_raw=100 N, H_gel=20 N, p=2, λ=0.6, H_burn=40 N, ventana M 0.5–1.2 | … | `food/texture.js` | ASSUMPTION; calibrar con texturometría (Fase 14) |
+
+## Fases 8–12
+| Parámetro | Valor | Dónde | Estado |
+|---|---|---|---|
+| Difusividad D(T) | D₀=3.4e-7, Eₐ=26 kJ/mol → 7.8e-11 m²/s a 100 °C | `physics/moisture.js` | **Calibrado** a ~14 min de cocción a 100 °C (criterio tiempo típico 12–18 min); Eₐ cercana a 25–33 kJ/mol de Bello et al. |
+| M_eq(T) | 0.45 (20 °C) → 2.5 (100 °C), lineal | `physics/moisture.js` | ASSUMPTION |
+| Umbrales del clasificador | ver D20 | `food/classifier.js` | ASSUMPTION fijado a priori |
+| k_eff del lecho/agua con mezcla | 5 / 20 W/mK (×(1+STIR)); 0.2 seco | `food/rice.js` | ASSUMPTION (convección/burbujeo); k seco en rango 0.1–0.6 de la spec |
+| Eficiencia placa→olla, h_conv, ε recipiente | 0.8, 10 W/m²K, 0.3 | `food/rice.js` | ASSUMPTION |
+| h_m, RH, fuga de tapa | 0.005 m/s, 0.5, 0.1 | `food/rice.js` | ASSUMPTION |
+| Dimensiones de grano por tipo | ver RICE_TYPES | `food/rice.js` | ASSUMPTION (típicas) |
+| aw(M)=M/(M+0.08) | — | `food/rice.js` | ASSUMPTION (aw≈0.63 a 12 % b.h.) |
+| Mapeos visuales (burbujas/vapor/brillo) | ver adapter | `output/adapter.js` | Visuales, no físicos |
