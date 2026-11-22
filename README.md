@@ -5,7 +5,7 @@ Simulador de cocina con física real (calor, difusión de agua, gelatinización,
 ```bash
 npm install
 npm run dev      # http://localhost:5173
-npm test         # 138 tests
+npm test         # 148 tests
 npm run build    # dist/  → Vercel lo detecta como Vite (vercel.json incluido)
 ```
 **Controles:** arrastra el frasco (arroz) o la botella (agua) sobre la olla para verter; arrastra la olla al quemador; barra de calor; cuchara = agitar. Botones equivalentes para tocar.
@@ -14,7 +14,7 @@ Referencia: 200 g de arroz + 300 g de agua ≈ 14 min a 100 °C. Tras hervir **b
 
 ## Estado por fases
 0–8 motor headless completo y validado (S1–S5) · 9–11 escena, visuales e interacción · 12 assets VRChef integrados.
-Pendiente: 13 (Worker, rendimiento) y 14 (documentación completa). **El render no pudo verificarse visualmente en el entorno de desarrollo** (ver docs/DECISIONS.md D23).
+13: Worker implementado (sin medir en móvil); pendiente 14 (documentación completa). **El render no pudo verificarse visualmente en el entorno de desarrollo** (ver docs/DECISIONS.md D23).
 
 ## Estructura
 `src/core` · `src/numerical` · `src/physics` · `src/chemistry` · `src/food` · `src/output` (adapter) · `src/engine3d` · `vendor/ode` · `public/assets` · `docs/` · `tests/`.

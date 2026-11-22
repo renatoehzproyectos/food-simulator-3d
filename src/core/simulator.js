@@ -65,6 +65,14 @@ class Session {
     if (n === MAX_STEPS_PER_ADVANCE) this._acc = 0; // descarta deuda para no bloquear la UI
     return n;
   }
+  /** Avance con presupuesto de tiempo (Worker, REQ-PERF-002): consume pasos fijos hasta agotar el tiempo acumulado o `budget_ms` de CPU.
+   *  No descarta tiempo simulado salvo que la deuda supere `maxBacklog_s` (protección ante dispositivos lentos). Devuelve pasos dados. */
+  advanceFor(simDt_s, budget_ms, { maxBacklog_s = 30, now = () => globalThis.performance.now() } = {}) {
+    this._acc += simDt_s; const t0 = now(); let n = 0;
+    while (this._acc >= this.dt_s - 1e-12) { this._stepOnce(); this._acc -= this.dt_s; n++; if ((n & 15) === 0 && now() - t0 > budget_ms) break; }
+    if (this._acc > maxBacklog_s) this._acc = 0;
+    return n;
+  }
   /** Avanza exactamente `dur_s` (último paso recortado). */
   advanceSim(dur_s) {
     let left = dur_s;

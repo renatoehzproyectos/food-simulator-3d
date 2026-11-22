@@ -1,7 +1,8 @@
 // Entorno, cámara, luces y bucle (REQ-3D-001). buildWorld() no necesita WebGL (testeable en Node); createRenderer() sí.
 import * as THREE from 'three';
 export const COUNTER = { w: 1.8, d: 0.9, y: 0 };
-export const POT_R_IN = 0.0977, POT_H = 0.14;   // coherente con vessel.base_area_m2 = 0.03 y height_m = 0.14 de la simulación
+export const POT_R_IN = 0.092, POT_H = 0.14;   // radio medido en Pot_1.glb (casco de una sola superficie, r=0.092 m entre y=0.005 y 0.145 m). La simulación usa base_area = π·POT_R_IN² (ver POT_AREA_M2)
+export const POT_AREA_M2 = Math.PI * POT_R_IN * POT_R_IN;
 
 export function buildWorld({ shadowMap = 1024 } = {}) {
   const scene = new THREE.Scene(); scene.background = new THREE.Color(0x1d1a17); scene.fog = new THREE.Fog(0x1d1a17, 2.5, 6);
@@ -15,7 +16,7 @@ export function buildWorld({ shadowMap = 1024 } = {}) {
   return { scene, camera, sun, counter };
 }
 export async function createRenderer(canvas, { mobile = false } = {}) {
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: !mobile, powerPreference: 'high-performance' });
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
   renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap; renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.toneMapping = THREE.ACESFilmicToneMapping;
   return renderer;
 }

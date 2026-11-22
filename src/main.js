@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { createFoodSimulator } from './registry.js';
-import { buildWorld, createRenderer, createControls, DynamicResolution, potView } from './engine3d/scene.js';
+import { createSimClient } from './worker/sim-client.js';
+import { buildWorld, createRenderer, createControls, DynamicResolution, potView, POT_AREA_M2 } from './engine3d/scene.js';
 import { AssetManager } from './engine3d/asset-manager.js';
 import { AudioManager } from './engine3d/audio.js';
 import { RiceVisual } from './engine3d/food-visuals.js';
@@ -13,7 +13,7 @@ import { burnerGlow, OUTCOME_ES } from './output/adapter.js';
 const $ = (id) => document.getElementById(id);
 const BURNER = { x: 0, z: -0.05 };
 const mobile = matchMedia('(pointer:coarse)').matches;
-const SESSION_INPUT = { food: 'rice', riceType: 'long_grain', vessel: { material: 'steel', base_area_m2: 0.03, height_m: 0.14, mass_kg: 0.6, lid: { closed: true } },
+const SESSION_INPUT = { food: 'rice', riceType: 'long_grain', vessel: { material: 'steel', base_area_m2: POT_AREA_M2, height_m: 0.14, mass_kg: 0.6, lid: { closed: true } },
   environment: { T_ambient_C: 20, duration_s: 86400 }, simulation: { timeStep_s: 0.5, seed: 1 } };
 let session, timeScale = 60, paused = false, power = 500, lidClosed = true, last = performance.now(), hudT = 0, toastT = 0, snap;
 
@@ -24,6 +24,10 @@ async function boot() {
   const load = async (id) => { try { return await assets.load(id); } catch (e) { console.warn('asset', id, e); return null; } };
   // recursos críticos primero, el resto en segundo plano (carga bajo demanda)
   const [pot, burner] = await Promise.all([load('pot'), load('burner')]);
+  // Los GLB de VRChef traen materiales negros sin textura y la escena no tiene mapa de entorno: la olla salía como silueta. Entorno procedural + acero.
+  { const { RoomEnvironment } = await import('three/examples/jsm/environments/RoomEnvironment.js'); const pm = new THREE.PMREMGenerator(renderer);
+    scene.environment = pm.fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.6; pm.dispose();
+    if (pot && !pot.userData?.fallback) pot.traverse((o) => { if (o.isMesh && !['Sphere01', 'Line01'].includes(o.name)) { const dark = o.name.startsWith('Rectangle1') && o.geometry.attributes.position.count < 1000; o.material = new THREE.MeshStandardMaterial({ color: dark ? 0x2a2a2c : 0x8d9399, metalness: 0.75, roughness: 0.38, side: THREE.DoubleSide }); } else if (o.isMesh) o.material = new THREE.MeshStandardMaterial({ color: 0x9aa0a6, metalness: 0.7, roughness: 0.35 }); }); }
   $('load').textContent = 'Listo'; 
   burner.position.set(BURNER.x, 0, BURNER.z); scene.add(burner); const heatY = new THREE.Box3().setFromObject(burner).max.y;
   const glow = new THREE.Mesh(new THREE.RingGeometry(0.06, 0.11, 40), new THREE.MeshBasicMaterial({ color: 0xff5a1a, transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false })); glow.rotation.x = -Math.PI / 2; glow.position.set(BURNER.x, heatY + 0.001, BURNER.z); scene.add(glow);
@@ -40,8 +44,8 @@ async function boot() {
   inter.potPos = { x: 0, z: 0.2 };
 
   function newSession() {
-    session = createFoodSimulator().createSession(SESSION_INPUT, { skipValidation: true });
-    session.on('event', (e) => { audio.onEvent(e); const msg = { BOIL_START: '¡Hierve! Baja el fuego para que no se seque', WATER_DEPLETED: 'Se acabó el agua libre', SIZZLE: 'El fondo chisporrotea', BURN_ONSET: '¡Empieza a quemarse!', OVERFLOW: 'La olla está llena', WARN: e.message }[e.type]; if (msg) toast(msg); });
+    session?.dispose(); session = createSimClient(SESSION_INPUT);
+    session.on((e) => { audio.onEvent(e); const msg = { BOIL_START: '¡Hierve! Baja el fuego para que no se seque', WATER_DEPLETED: 'Se acabó el agua libre', SIZZLE: 'El fondo chisporrotea', BURN_ONSET: '¡Empieza a quemarse!', OVERFLOW: 'La olla está llena', WARN: e.message }[e.type]; if (msg) toast(msg); });
     session.command({ type: 'SET_LID', closed: lidClosed });
   }
   function toast(m) { const t = $('toast'); t.textContent = m; t.style.opacity = 1; toastT = 2.4; }
@@ -75,7 +79,8 @@ async function boot() {
   function frame(now) {
     const dtMs = now - last, dt = Math.min(0.1, dtMs / 1000); last = now; res.frame(dtMs);
     if (!paused) session.advance(dt * timeScale);
-    snap = session.snapshot(); inter.update(dt);
+    snap = session.snapshot() ?? snap; inter.update(dt);
+    if (!snap) { requestAnimationFrame(frame); return; }   // el Worker aún no envió el snapshot inicial
     const st = snap.state, lq = liquid.update(snap, dt); rice.update(snap); thermal.update(snap); audio.update(st);
     glow.material.opacity = burnerGlow(st) * (inter.onHeat ? 0.85 : 0);
     controls.update(); renderer.render(scene, camera);
@@ -87,8 +92,8 @@ async function boot() {
 }
 function hud(s, fps) {
   const st = s.state, o = s.outcome, m = Math.floor(s.t_s / 60), sec = Math.floor(s.t_s % 60), K = (x) => `${(x - 273.15).toFixed(0)}°C`;
-  $('t').textContent = `${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`; $('fps').textContent = `${fps.toFixed(0)} fps`;
-  $('Tw').textContent = K(st.waterT_K); $('Tb').textContent = K(st.bottomT_K); $('fw').textContent = (st.freeWater_kg * 1000).toFixed(0);
+  $('t').textContent = `${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`; $('fps').textContent = `${fps.toFixed(0)} fps · sim ${session.mode === 'worker' ? 'W' : 'M'} ${session.stats.ms.toFixed(1)} ms`;
+  $('Tw').textContent = st.freeWater_kg > 1e-4 ? K(st.waterT_K) : '—'; $('Tb').textContent = K(st.bottomT_K); $('fw').textContent = (st.freeWater_kg * 1000).toFixed(0);
   $('M').textContent = st.riceMass_kg ? st.M_mean_db.toFixed(2) : '–'; $('a').textContent = st.riceMass_kg ? st.alpha_mean.toFixed(2) : '–';
   const el = $('state'); if (!st.riceMass_kg) { el.textContent = 'Sin arroz'; el.className = ''; $('why').textContent = 'Añade arroz y agua'; return; }
   el.textContent = OUTCOME_ES[o.label]; el.className = o.label === 'cocido' ? 'ok' : o.label === 'quemado' ? 'q' : 'warn'; $('why').textContent = o.reasons[0] ?? '';

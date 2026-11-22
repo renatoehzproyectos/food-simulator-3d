@@ -18,7 +18,7 @@ export const MATERIALS = {
 /** ASSUMPTION: dimensiones típicas del grano (mm) por tipo; espesor = 0.8·ancho. */
 export const RICE_TYPES = { long_grain: { L: 6.5, W: 2.0 }, medium_grain: { L: 5.5, W: 2.5 }, short_grain: { L: 5.0, W: 2.7 }, basmati: { L: 7.0, W: 1.8 }, jasmine: { L: 6.8, W: 2.0 } };
 /** ASSUMPTION (salvo ρ del agua y L_v): ver docs/ASSUMPTIONS.md. */
-export const RICE_PARAMS = { rho_grain: 1450, rho_bulk: 850, cp_dry: 1500, rho_w: 998, k_dry: 0.2, k_wet_bed: 5, k_wet_water: 20, stir_gain: 1, stir_tau_s: 15,
+export const RICE_PARAMS = { rho_grain: 1450, rho_bulk: 850, cp_dry: 1500, rho_w: 998, k_dry: 0.2, k_wet_bed: 5, k_wet_water: 20, boil_mix: 40, boil_tau_s: 5, stir_gain: 1, stir_tau_s: 15,
   eps_vessel: 0.3, h_top_closed: 4, h_top_open: 8, efficiency: 0.8, h_m: 0.005, leak: 0.1, dz: 0.0025, height_m: 0.1, nShells: 8, aw_half: 0.08, RH: 0.5, pH: 6.5 };
 
 const NS = () => RICE_PARAMS.nShells;
@@ -43,7 +43,7 @@ export const riceFood = {
       T: new Float64Array(n).fill(Tamb), mw: new Float64Array(n), r: new Float64Array(n), cap: new Float64Array(n),
       grains: /** @type {any[]} */ (new Array(n).fill(null)), nBed: 0, grids: new Map(), stir: 0,
       heat: { on: false, mode: 'power', power_W: 0, intensity: 1, T_set_K: Tamb },
-      burnHold_s: 0, flags: { boil: false, depleted: false, burn: false, sizzle: false },
+      burnHold_s: 0, boilAct: 0, flags: { boil: false, depleted: false, burn: false, sizzle: false },
       led: { massIn: 0, E0: mass * mat.cp * Tamb, Eadded: 0, Ein: 0, Evap: 0, vaporLost: 0, spilled: 0 },
       lastEvap_kg_s: 0, lastGen_kg_s: 0, t: 0 };
     const gg = grainGeometry(s.riceType, input.grain?.thickness_factor);
@@ -121,7 +121,7 @@ function stepRice(s, dt, ctx) {
   const P = s.P, n = s.n, A = s.A, dz = s.dz;
   let top = 0; for (let i = n - 1; i >= 1; i--) if (s.r[i] > 0 || s.mw[i] > 1e-12) { top = i; break; }
   const na = top + 1; let grid = s.grids.get(na); if (!grid) { grid = makeGrid({ n: na, length_m: na * dz, measure: A }); s.grids.set(na, grid); }
-  s.stir *= Math.exp(-dt / P.stir_tau_s); const mix = 1 + P.stir_gain * s.stir;
+  s.stir *= Math.exp(-dt / P.stir_tau_s); const mix = (1 + P.stir_gain * s.stir) * (1 + P.boil_mix * s.boilAct); // ASSUMPTION (D15/D26): la ebullición nucleada mezcla el líquido → k efectivo ×(1+boil_mix)
   const rc = new Float64Array(na), k = new Float64Array(na), Q = new Float64Array(na), T0 = s.T.subarray(0, na);
   for (let i = 0; i < na; i++) {
     rc[i] = Math.max(capC(s, i), 1e-6) / (A * dz);
@@ -154,8 +154,9 @@ function stepRice(s, dt, ctx) {
   for (let i = 1; i <= top; i++) { if (s.T[i] <= T_BOIL_K || s.mw[i] <= 0) continue;
     const C = capC(s, i), dT = s.T[i] - T_BOIL_K; let m = dT * C / (L_V_WATER + CP_WATER * dT); m = Math.min(m, s.mw[i]);
     const o = removeVapor(s, i, m); gen += m; esc += m; s.led.Evap += o.Eout; s.led.vaporLost += m;   // todo el vapor de ebullición sale: el calor que devolvería la tapa se re-evaporaría (presión no modelada)
-    if (!s.flags.boil) { s.flags.boil = true; ctx.emit('BOIL_START', { containerId: 'pot' }); }
-  }
+    }
+  s.boilAct += ((gen > 0 ? 1 : 0) - s.boilAct) * (1 - Math.exp(-dt / P.boil_tau_s));
+  if (!s.flags.boil && gen > 0 && topWet > 0 && s.T[topWet] >= T_BOIL_K - 3) { s.flags.boil = true; ctx.emit('BOIL_START', { containerId: 'pot' }); }
   rebalanceWater(s);
   s.lastEvap_kg_s = esc / dt; s.lastGen_kg_s = gen / dt;
   // indicadores de quemado y eventos
@@ -193,7 +194,9 @@ function snapshotRice(s) {
   for (let i = 0; i < n; i++) { T_K[i] = s.T[i]; freeWater[i] = s.mw[i]; }
   for (let i = 1; i <= nb; i++) { const g = s.grains[i]; M_db[i - 1] = g ? meanM(g) : 0; alpha[i - 1] = g ? meanAlpha(g) : 0; B[i - 1] = g ? g.B : 0; }
   const frac = topWet ? Math.min(1, (s.mw[topWet] / P.rho_w + s.r[topWet] / s.rhoDry) / (s.A * s.dz)) : 0;
-  const level_m = topWet ? (topWet - 1) * s.dz + frac * s.dz : 0, Twater = topWet ? s.T[topWet] : s.T[0];
+  const level_m = topWet ? (topWet - 1) * s.dz + frac * s.dz : 0;
+  let swT = 0, swM = 0; for (let i = 1; i < n; i++) if (s.mw[i] > 1e-12) { swT += s.mw[i] * s.T[i]; swM += s.mw[i]; }
+  const Twater = swM > 0 ? swT / swM : s.T[0];   // T media del agua libre ponderada por masa (la celda superior parcial daba lecturas ruidosas)
   const swell = 1 + (v.M_mean_db - s.M0) * s.rhoDry / P.rho_w;               // V/V0 del grano
   const outcome = classifyRice(v);
   return { containers: [{ id: 'pot', T_wall_K: s.T[0], lid: s.lid, liquids: [{ kind: 'water', mass_kg: mFree, T_K: Twater, volume_m3: mFree / P.rho_w }], contents: nb ? ['rice'] : [] }],

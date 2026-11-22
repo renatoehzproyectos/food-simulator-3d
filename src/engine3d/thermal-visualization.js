@@ -8,7 +8,7 @@ const NCELL = 48;
 export class ThermalView {
   constructor() {
     this.data = new Uint8Array(NCELL * 4); this.tex = new THREE.DataTexture(this.data, 1, NCELL, THREE.RGBAFormat); this.tex.magFilter = THREE.LinearFilter; this.tex.minFilter = THREE.LinearFilter; this.tex.needsUpdate = true;
-    this.column = new THREE.Mesh(new THREE.CylinderGeometry(POT_R_IN - 0.004, POT_R_IN - 0.004, 1, 32, 1, false), new THREE.MeshBasicMaterial({ map: this.tex, transparent: true, opacity: 0.92 }));
+    this.column = new THREE.Mesh(new THREE.CylinderGeometry(POT_R_IN - 0.007, POT_R_IN - 0.007, 1, 32, 1, false), new THREE.MeshBasicMaterial({ map: this.tex, transparent: true, opacity: 0.92 }));
     this.column.visible = false; this.enabled = false; this.wallMaterials = []; this._orig = new Map();
   }
   /** Registra los materiales de la pared de la olla para teñirlos (se restauran al desactivar). */

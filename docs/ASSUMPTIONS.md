@@ -34,3 +34,5 @@ Fuente verificada: Antoine del agua (constantes NIST, 1–100 °C), validado en 
 | Dimensiones de grano por tipo | ver RICE_TYPES | `food/rice.js` | ASSUMPTION (típicas) |
 | aw(M)=M/(M+0.08) | — | `food/rice.js` | ASSUMPTION (aw≈0.63 a 12 % b.h.) |
 | Mapeos visuales (burbujas/vapor/brillo) | ver adapter | `output/adapter.js` | Visuales, no físicos |
+
+- `boil_mix = 40`, `boil_tau_s = 5` (RICE_PARAMS): factor de mejora de k efectivo por mezcla de ebullición nucleada. Sin fuente; orden de magnitud para que el agua en ebullición sea casi isoterma. Calibrado cualitativamente (agua ≈ 99 °C durante la ebullición). Verificar con literatura de transferencia de calor en ebullición.

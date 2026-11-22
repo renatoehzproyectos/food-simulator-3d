@@ -23,7 +23,7 @@ export class RiceVisual {
     const key = `${n}|${bedH.toFixed(4)}|${size.toFixed(5)}`;
     if (key !== this._key) {
       this._key = key; const d = this._dummy;
-      for (let i = 0; i < n; i++) { const g = this.u[i]; d.position.set(Math.cos(g.th) * g.r * (POT_R_IN - 0.006), FLOOR_Y + size * 0.4 + g.h * bedH, Math.sin(g.th) * g.r * (POT_R_IN - 0.006));
+      for (let i = 0; i < n; i++) { const g = this.u[i]; d.position.set(Math.cos(g.th) * g.r * (POT_R_IN - 0.012), FLOOR_Y + size * 0.4 + g.h * bedH, Math.sin(g.th) * g.r * (POT_R_IN - 0.012));
         d.rotation.set(g.tilt, g.yaw, 0); d.scale.set(size, size * 0.34, size * 0.34); d.updateMatrix(); this.mesh.setMatrixAt(i, d.matrix); }
       this.mesh.instanceMatrix.needsUpdate = true;
     }
