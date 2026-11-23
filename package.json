@@ -9,17 +9,28 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "inventory": "node tools/inventory-assets.mjs ../VRChef_modelostexturasaudios assets/metadata/inventory.json"
+    "inventory": "node tools/inventory-assets.mjs ../VRChef_modelostexturasaudios assets/metadata/inventory.json",
+    "example": "node examples/rice-batch.mjs",
+    "typecheck": "tsc -p tsconfig.types.json"
   },
   "engines": {
     "node": ">=20"
   },
   "devDependencies": {
+    "typescript": "^5.9.3",
     "vite": "^5.4.0",
     "vitest": "^2.1.0"
   },
   "dependencies": {
     "@tangent.to/lina": "^0.1.4",
     "three": "^0.170.0"
+  },
+  "types": "src/index.d.ts",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
   }
 }

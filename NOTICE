@@ -1,6 +1,7 @@
 Este proyecto incluye modelos 3D y audio derivados de VRChef
 (https://github.com/dyanikoglu/VRChef), licenciado bajo Apache License 2.0.
-Texto completo: LICENSE-VRChef (copia de https://www.apache.org/licenses/LICENSE-2.0.txt).
+Texto completo: LICENSE-VRChef (copia íntegra de https://github.com/dyanikoglu/VRChef/blob/master/LICENSE, Copyright 2018 UntitledGroup: Doğa Can Yanıkoğlu, Muhammed Ertuğrul Güngör, Fatma Asal, Seçil Usta).
+Cambios respecto a los originales: ver abajo (conversión, escalado, recorte de audio).
 
 Archivos usados (public/assets): models/{Pot_1,Spoon,hotplate_oven,bottle,jar}.glb sin modificar;
 audio/boiling_water.mp3 y audio/frying_sound.mp3 convertidos a mono 22.05 kHz mp3 a 48 kbps desde los originales

@@ -1,0 +1,1 @@
+{ "compilerOptions": { "noEmit": true, "strict": true, "module": "ES2022", "moduleResolution": "Bundler", "target": "ES2022", "skipLibCheck": false, "lib": ["ES2022", "DOM"] }, "files": ["examples/types-check.ts"] }

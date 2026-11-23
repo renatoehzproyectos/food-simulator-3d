@@ -36,3 +36,4 @@ Fuente verificada: Antoine del agua (constantes NIST, 1–100 °C), validado en 
 | Mapeos visuales (burbujas/vapor/brillo) | ver adapter | `output/adapter.js` | Visuales, no físicos |
 
 - `boil_mix = 40`, `boil_tau_s = 5` (RICE_PARAMS): factor de mejora de k efectivo por mezcla de ebullición nucleada. Sin fuente; orden de magnitud para que el agua en ebullición sea casi isoterma. Calibrado cualitativamente (agua ≈ 99 °C durante la ebullición). Verificar con literatura de transferencia de calor en ebullición.
+- `roh_Csf = 0.013` (RICE_PARAMS): valor de agua sobre cobre liso aplicado a acero; `NUCLEATE_ONSET_K = 4 K` (umbral de burbujas aisladas, de resúmenes); propiedades de saturación de tabla sin re-verificar (`physics/boiling.js`). `boil_mix` sigue sin fuente.

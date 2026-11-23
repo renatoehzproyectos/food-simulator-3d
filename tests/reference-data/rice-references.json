@@ -1,0 +1,99 @@
+{
+  "_note": "Datos experimentales publicados contra los que se validará el modelo. NINGÚN valor se inventa: cada entrada pendiente tiene status 'todo' y no lleva 'value'. Al completarla, 'value' y 'source' (cita verificable) son obligatorios; tests/reference-data.test.js lo comprueba. 'candidate_sources' son pistas bibliográficas NO verificadas contra el texto completo: no son 'value'.",
+  "entries": [
+    {
+      "id": "gelatinization-DSC-peak",
+      "quantity": "Temperatura de pico DSC de gelatinización del arroz (°C)",
+      "status": "todo",
+      "required": "Valor medido y condiciones (velocidad de calentamiento, razón agua:arroz, variedad)",
+      "model_check": "chemistry/starch.js: pico a ~10 K/min",
+      "interim_reference_in_docs": "MODELS.md cita ≈74 °C (Food Hydrocolloids 2007) sin haber verificado la tabla original",
+      "candidate_sources": [
+        {
+          "cite": "Food Hydrocolloids 2007, doi:10.1016/j.foodhyd.2006.11.014 (almidón aislado de Basmati 370)",
+          "reported": "Tp = 74.2 °C (dispersión de almidón, no grano entero; concentración no recuperada)"
+        },
+        {
+          "cite": "Int. J. Food Properties, doi:10.1080/10942910903131407 (almidones de varios cultivares, DSC 10 °C/min)",
+          "reported": "cultivar Sharbati: To 68.8, Tp 73.2, Tc 79.0 °C"
+        },
+        {
+          "cite": "Amornsin A., PhD, Univ. of Georgia, 2003 (arroz glutinoso, grano entero)",
+          "reported": "To 58–67 °C, Tp 69–72 °C"
+        }
+      ]
+    },
+    {
+      "id": "cooking-time-100C",
+      "quantity": "Tiempo de cocción óptimo del arroz de grano largo a 100 °C (min)",
+      "status": "todo",
+      "required": "Dato publicado con método (p. ej. compresión entre placas, desaparición del núcleo blanco)",
+      "model_check": "rice.js: D(100 °C) calibrado a ~14 min (D20)",
+      "candidate_sources": [
+        {
+          "cite": "Briffaz A. et al., Modelling starch phase transitions and water uptake of rice kernels during cooking (registro AGRIS 65df75954c5aef494fe2bc63)",
+          "reported": "cinética de absorción 50–100 °C en arroz redondo coreano; números NO recuperados (hace falta el artículo completo)"
+        }
+      ]
+    },
+    {
+      "id": "water-uptake-curve",
+      "quantity": "Humedad b.s. del grano vs tiempo a temperatura constante",
+      "status": "todo",
+      "required": "Curva publicada (Fick/Peleg) con T y variedad",
+      "model_check": "physics/moisture.js",
+      "candidate_sources": [
+        {
+          "cite": "Briffaz A. et al. (ver arriba)",
+          "reported": "curvas de absorción 50–100 °C; sin valores recuperados"
+        },
+        {
+          "cite": "Ahromrit A., Ledward D.A., Niranjan K., 2006 (arroz glutinoso, remojo)",
+          "reported": "difusividad efectiva sube de 20 a 50 °C y BAJA a mayor temperatura por la gelatinización. Posible conflicto con D(T) monótono del modelo: revisar"
+        },
+        {
+          "cite": "Gomi Y. et al., Food Sci. Technol. Int. Tokyo 2, 171 (1996), PFG-NMR",
+          "reported": "coeficiente de difusión de agua en mezclas almidón/agua, 20–78 °C, 0.42–0.89 g/g; datos tabulados no recuperados"
+        },
+        {
+          "cite": "Pereira J.C.A. et al., Engineering Computations 39(4), 1556 (2022), doi:10.1108/EC-06-2021-0323",
+          "reported": "absorción a 28, 40 y 50 °C; modelos de difusión y de Peleg (solo remojo, sin 100 °C)"
+        }
+      ]
+    },
+    {
+      "id": "texture-hardness",
+      "quantity": "Dureza (N) de arroz cocido vs grado de gelatinización/humedad",
+      "status": "todo",
+      "required": "Datos de texturómetro publicados",
+      "model_check": "food/texture.js (parámetros hoy ASSUMPTION)",
+      "candidate_sources": [
+        {
+          "cite": "Shimizu N. et al., J. Japanese Soc. Agric. Machinery 59(6):75–82 (1997)",
+          "reported": "cualitativo: la dureza del grano cocido baja al subir el grado de gelatinización (grano individual, 63 % b.h.); no se recuperaron valores en N"
+        }
+      ]
+    },
+    {
+      "id": "boiling-heat-transfer",
+      "quantity": "Mejora de transferencia de calor por ebullición nucleada (factor sobre k efectivo)",
+      "status": "todo",
+      "required": "Correlación publicada (p. ej. tipo Rohsenow) y su rango de validez",
+      "model_check": "physics/boiling.js (Rohsenow+Zuber, D32) ya implementado y testeado contra la forma analítica; falta compararlo con una medición real de sobretemperatura de fondo de olla. boil_mix=40 (mezclado del seno) sigue ASSUMPTION",
+      "candidate_sources": [
+        {
+          "cite": "Rohsenow (1952) vía Saiz Jabardo et al., J. Braz. Soc. Mech. Sci. Eng.",
+          "reported": "Csf = 0.013 para agua sobre cobre liso"
+        },
+        {
+          "cite": "Wikipedia/COMSOL (resúmenes de ebullición nucleada)",
+          "reported": "agua: ebullición nucleada con sobretemperatura de pared ≈10–30 K; flujo crítico ≈30 K; 4–10 K = burbujas aisladas"
+        },
+        {
+          "cite": "NPTEL M8 problemas resueltos (olla de cobre de 150 mm con fondo a 115 °C)",
+          "reported": "problema resuelto con Rohsenow; resultados numéricos no recuperados"
+        }
+      ]
+    }
+  ]
+}

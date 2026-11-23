@@ -6,6 +6,8 @@ import { makeGrid, stepHeat } from '../physics/heat.js';
 import { createGrain, stepGrain, grainWater_kg, RICE_GRAIN_DEFAULTS } from '../physics/moisture.js';
 import { CP_WATER, surfaceEvaporation } from '../physics/evaporation.js';
 import { L_V_WATER, T_BOIL_K, C_to_K, g_to_kg, SIGMA_SB } from '../core/units.js';
+import { ValidationError } from '../core/validation.js';
+import { boilingH, NUCLEATE_ONSET_K } from '../physics/boiling.js';
 import { stepStarch } from '../chemistry/starch.js';
 import { kMaillard } from '../chemistry/maillard.js';
 import { hardness_N, doneness, stickiness } from './texture.js';
@@ -15,10 +17,16 @@ import { classifyRice, CLASS_PARAMS } from './classifier.js';
 export const MATERIALS = {
   steel: { rho: 7850, cp: 500, k: 16 }, aluminum: { rho: 2700, cp: 900, k: 205 }, cast_iron: { rho: 7200, cp: 460, k: 52 },
   ceramic: { rho: 2400, cp: 800, k: 1.5 }, glass: { rho: 2500, cp: 840, k: 1.0 } };
+/** REQ-EXT-001: registra un material de recipiente ({rho kg/m³, cp J/kgK, k W/mK}) sin tocar el núcleo. */
+export function registerMaterial(name, def) {
+  const bad = ['rho', 'cp', 'k'].filter((p) => !(Number.isFinite(def?.[p]) && def[p] > 0));
+  if (typeof name !== 'string' || !name || bad.length) throw new ValidationError([{ code: 'E_MATERIAL', path: `materials.${name}`, message: `Material inválido (${bad.join(', ') || 'nombre'}).`, hint: 'Ej.: registerMaterial("copper", { rho: 8960, cp: 385, k: 400 }).' }]);
+  MATERIALS[name] = { rho: def.rho, cp: def.cp, k: def.k }; return MATERIALS[name];
+}
 /** ASSUMPTION: dimensiones típicas del grano (mm) por tipo; espesor = 0.8·ancho. */
 export const RICE_TYPES = { long_grain: { L: 6.5, W: 2.0 }, medium_grain: { L: 5.5, W: 2.5 }, short_grain: { L: 5.0, W: 2.7 }, basmati: { L: 7.0, W: 1.8 }, jasmine: { L: 6.8, W: 2.0 } };
 /** ASSUMPTION (salvo ρ del agua y L_v): ver docs/ASSUMPTIONS.md. */
-export const RICE_PARAMS = { rho_grain: 1450, rho_bulk: 850, cp_dry: 1500, rho_w: 998, k_dry: 0.2, k_wet_bed: 5, k_wet_water: 20, boil_mix: 40, boil_tau_s: 5, stir_gain: 1, stir_tau_s: 15,
+export const RICE_PARAMS = { rho_grain: 1450, rho_bulk: 850, cp_dry: 1500, rho_w: 998, k_dry: 0.2, k_wet_bed: 5, k_wet_water: 20, boil_mix: 40, boil_tau_s: 5, rohsenow: true, roh_Csf: 0.013, stir_gain: 1, stir_tau_s: 15,
   eps_vessel: 0.3, h_top_closed: 4, h_top_open: 8, efficiency: 0.8, h_m: 0.005, leak: 0.1, dz: 0.0025, height_m: 0.1, nShells: 8, aw_half: 0.08, RH: 0.5, pH: 6.5 };
 
 const NS = () => RICE_PARAMS.nShells;
@@ -35,6 +43,7 @@ export const riceFood = {
   init(input) {
     const P = { ...RICE_PARAMS, ...(input.params ?? {}) };
     const v = input.vessel ?? {}, mat = MATERIALS[v.material ?? 'steel'];
+    if (!mat) throw new ValidationError([{ code: 'E_MATERIAL', path: 'vessel.material', message: `Material desconocido: '${v.material}'.`, hint: `Disponibles: ${Object.keys(MATERIALS).join(', ')} (o usa registerMaterial).` }]);
     const A = v.base_area_m2 ?? 0.03, dz = P.dz, n = Math.min(80, Math.ceil((v.height_m ?? P.height_m) / dz)) + 1;
     const mass = v.mass_kg ?? 0.6;
     const Tamb = C_to_K(input.environment?.T_ambient_C ?? input.environment?.initialTemperature_C ?? 20);
@@ -43,7 +52,7 @@ export const riceFood = {
       T: new Float64Array(n).fill(Tamb), mw: new Float64Array(n), r: new Float64Array(n), cap: new Float64Array(n),
       grains: /** @type {any[]} */ (new Array(n).fill(null)), nBed: 0, grids: new Map(), stir: 0,
       heat: { on: false, mode: 'power', power_W: 0, intensity: 1, T_set_K: Tamb },
-      burnHold_s: 0, boilAct: 0, flags: { boil: false, depleted: false, burn: false, sizzle: false },
+      burnHold_s: 0, boilAct: 0, hBoil: 0, flags: { boil: false, depleted: false, burn: false, sizzle: false },
       led: { massIn: 0, E0: mass * mat.cp * Tamb, Eadded: 0, Ein: 0, Evap: 0, vaporLost: 0, spilled: 0 },
       lastEvap_kg_s: 0, lastGen_kg_s: 0, t: 0 };
     const gg = grainGeometry(s.riceType, input.grain?.thickness_factor);
@@ -129,6 +138,12 @@ function stepRice(s, dt, ctx) {
     Q[i] = -s.h_conv * s.perim * (T0[i] - s.Tamb) / A;                       // pérdida lateral W/m³
     if (i === 0) Q[0] -= P.eps_vessel * SIGMA_SB * 2 * (T0[0] ** 4 - s.Tamb ** 4) / dz; // radiación del recipiente (A_rad≈2·A_base), evita T irreales en seco
   }
+  // D32: con el fondo sobre T_sat, el flujo fondo→agua lo limita Rohsenow (ebullición nucleada). La cara 0–1 tiene resistencia dz/(2k0)+dz/(2k1) = 1/h_b;
+  // se ajusta k[0] (solo afecta a esa cara salvo en modo 'temperatura', donde no se toca). Bajo 4 K de sobretemperatura no hay límite (convección efectiva previa).
+  if (P.rohsenow && na > 1 && s.mw[1] > 1e-9 && !(s.heat.on && s.heat.mode === 'temperature')) {
+    const dTe = s.T[0] - T_BOIL_K;
+    if (dTe >= NUCLEATE_ONSET_K) { const hb = boilingH(dTe, P.roh_Csf), Rres = 1 / hb - dz / (2 * k[1]); if (Rres > dz / (2 * k[0])) { k[0] = (dz / 2) / Rres; s.hBoil = hb; } else s.hBoil = 0; } else s.hBoil = 0;
+  } else s.hBoil = 0;
   const h = s.heat; let left = { type: 'neumann', flux: 0 };
   if (h.on) left = h.mode === 'temperature' ? { type: 'dirichlet', T: h.T_set_K } : { type: 'neumann', flux: h.power_W * h.intensity * P.efficiency / A };
   const res = stepHeat(grid, T0, { rho_cp_J_m3K: rc, k_W_mK: k }, { left, right: { type: 'robin', h: s.lid ? P.h_top_closed : P.h_top_open, Tinf: s.Tamb } }, dt, { scheme: 'implicit', Q });
